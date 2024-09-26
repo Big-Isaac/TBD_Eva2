@@ -1,0 +1,309 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 EVA2_2_INTEGRIDAD_REFERENCIAL\
+Isaac Guzm\'e1n, 22550331\
+my\
+zsh: command not found: my\
+mysqlsh\
+MySQL Shell 8.4.1\
+\
+Copyright (c) 2016, 2024, Oracle and/or its affiliates.\
+Oracle is a registered trademark of Oracle Corporation and/or its affiliates.\
+Other names may be trademarks of their respective owners.\
+\
+Type '\\help' or '\\?' for help; '\\quit' to exit.\
+ MySQL  SQL > \\connect --mc root@localhost\
+Creating a Classic session to 'root@localhost'\
+Fetching global names for auto-completion... Press ^C to stop.\
+Your MySQL connection id is 9\
+Server version: 9.0.1 MySQL Community Server - GPL\
+No default schema selected; type \\use <schema> to set one.\
+ MySQL  localhost  SQL > use tbd_e2\
+Default schema set to `tbd_e2`.\
+Fetching global names, object names from `tbd_e2` for auto-completion... Press ^C to stop.\
+ MySQL  localhost  tbd_e2  SQL > show tables;\
++------------------+\
+| Tables_in_tbd_e2 |\
++------------------+\
+| cliente          |\
+| factura          |\
++------------------+\
+2 rows in set (0.0037 sec)\
+ MySQL  localhost  tbd_e2  SQL > show create factura;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'factura' at line 1\
+ MySQL  localhost  tbd_e2  SQL > show create facturas;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'facturas' at line 1\
+ MySQL  localhost  tbd_e2  SQL > show * create factura;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* create factura' at line 1\
+ MySQL  localhost  tbd_e2  SQL > select * from cliente;\
++----+--------+-------------+---------------+\
+| id | nombre | apellido    | rfc           |\
++----+--------+-------------+---------------+\
+|  1 | Juan   | Primaries   | JAJAS12345678 |\
+|  2 | PAKO   | Omosexuiles | ugi040587hdhs |\
+|  3 | DanY   | Esgei       | popopopopo986 |\
++----+--------+-------------+---------------+\
+3 rows in set (0.0507 sec)\
+ MySQL  localhost  tbd_e2  SQL > show create table factura;\
++---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+| Table   | Create Table                                                                                                                                                                                                                              |\
++---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+| factura | CREATE TABLE `factura` (\
+  `folio` int NOT NULL AUTO_INCREMENT,\
+  `idCliente` int NOT NULL,\
+  PRIMARY KEY (`folio`),\
+  KEY `idCliente` (`idCliente`)\
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |\
++---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+1 row in set (0.0087 sec)\
+ MySQL  localhost  tbd_e2  SQL > alter table factura\
+                              -> add constraint foreign key (idCliente)\
+                              -> references cliente(id);\
+ERROR: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`tbd_e2`.`#sql-9e_9`, CONSTRAINT `factura_ibfk_1` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > delete from factura\
+                              -> where idCliente = 5;\
+Query OK, 1 row affected (0.0187 sec)\
+ MySQL  localhost  tbd_e2  SQL > select * from factura;\
++-------+-----------+\
+| folio | idCliente |\
++-------+-----------+\
+|     2 |         2 |\
+|     3 |         2 |\
+|     6 |         2 |\
+|     5 |         3 |\
+|     8 |         3 |\
++-------+-----------+\
+5 rows in set (0.0004 sec)\
+ MySQL  localhost  tbd_e2  SQL > alter table factura  add constraint foreign key (idCliente) references cliente(id);\
+Query OK, 5 rows affected (0.0697 sec)\
+\
+Records: 5  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > show create table factura;\
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+| Table   | Create Table                                                                                                                                                                                                                                                                                                                   |\
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+| factura | CREATE TABLE `factura` (\
+  `folio` int NOT NULL AUTO_INCREMENT,\
+  `idCliente` int NOT NULL,\
+  PRIMARY KEY (`folio`),\
+  KEY `idCliente` (`idCliente`),\
+  CONSTRAINT `factura_ibfk_1` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`)\
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |\
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+1 row in set (0.0006 sec)\
+ MySQL  localhost  tbd_e2  SQL > alter table drop constraint factura_ibfk_1;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'drop constraint factura_ibfk_1' at line 1\
+ MySQL  localhost  tbd_e2  SQL > alter table drop constraint factura_ibfk_1;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'drop constraint factura_ibfk_1' at line 1\
+ MySQL  localhost  tbd_e2  SQL > alter table drop constraint factura_ibfk_1;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'drop constraint factura_ibfk_1' at line 1\
+ MySQL  localhost  tbd_e2  SQL > alter table drop constraint factura;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'drop constraint factura' at line 1\
+ MySQL  localhost  tbd_e2  SQL > alter table drop constraint factura_ibfk_1\
+                              -> ;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'drop constraint factura_ibfk_1' at line 1\
+ MySQL  localhost  tbd_e2  SQL > alter table factura  add constraint foreign key (idCliente) references cliente(id);\
+Query OK, 5 rows affected (0.0545 sec)\
+\
+Records: 5  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > alter table factura  add constraint foreign key (idCliente) references cliente(id) on delete restrict on update restrict;\
+Query OK, 5 rows affected (0.0486 sec)\
+\
+Records: 5  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > show create table factura;\
++---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+| Table   | Create Table                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\
++---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+| factura | CREATE TABLE `factura` (\
+  `folio` int NOT NULL AUTO_INCREMENT,\
+  `idCliente` int NOT NULL,\
+  PRIMARY KEY (`folio`),\
+  KEY `idCliente` (`idCliente`),\
+  CONSTRAINT `factura_ibfk_1` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`),\
+  CONSTRAINT `factura_ibfk_2` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`),\
+  CONSTRAINT `factura_ibfk_3` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT\
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |\
++---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+1 row in set (0.0006 sec)\
+ MySQL  localhost  tbd_e2  SQL > select * from factura;\
++-------+-----------+\
+| folio | idCliente |\
++-------+-----------+\
+|     2 |         2 |\
+|     3 |         2 |\
+|     6 |         2 |\
+|     5 |         3 |\
+|     8 |         3 |\
++-------+-----------+\
+5 rows in set (0.0004 sec)\
+ MySQL  localhost  tbd_e2  SQL > select * from cliente;\
++----+--------+-------------+---------------+\
+| id | nombre | apellido    | rfc           |\
++----+--------+-------------+---------------+\
+|  1 | Juan   | Primaries   | JAJAS12345678 |\
+|  2 | PAKO   | Omosexuiles | ugi040587hdhs |\
+|  3 | DanY   | Esgei       | popopopopo986 |\
++----+--------+-------------+---------------+\
+3 rows in set (0.0019 sec)\
+ MySQL  localhost  tbd_e2  SQL > delete from cliente where id = 2;\
+ERROR: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`tbd_e2`.`factura`, CONSTRAINT `factura_ibfk_1` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > update cliente\
+                              -> set id = 5\
+                              -> where id = 2\
+                              -> ;\
+ERROR: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`tbd_e2`.`factura`, CONSTRAINT `factura_ibfk_1` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > alter table factura drop constraint factura_ibfk_1;\
+Query OK, 0 rows affected (0.0159 sec)\
+\
+Records: 0  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > alter table factura\
+                              -> add constraint foreign key (idCliente) references cliente(id) on delete cascade on update cascade;\
+Query OK, 5 rows affected (0.0462 sec)\
+\
+Records: 5  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > update cliente set id = 5 where id = 2 ;\
+ERROR: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`tbd_e2`.`factura`, CONSTRAINT `factura_ibfk_2` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > update cliente set id = 5 where id = 2;\
+ERROR: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`tbd_e2`.`factura`, CONSTRAINT `factura_ibfk_2` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > alter table factura add constraint foreign key (idCliente) references cliente(id) on delete cascade on update cascade;\
+Query OK, 5 rows affected (0.0524 sec)\
+\
+Records: 5  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > alter table factura add constraint foreign key (idCliente) references cliente(id) on delete cascade on update cascade;\
+Query OK, 5 rows affected (0.0520 sec)\
+\
+Records: 5  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > alter table factura add constraint foreign key (idCliente) references cliente(id) on delete cascade on update cascade;\
+Query OK, 5 rows affected (0.0457 sec)\
+\
+Records: 5  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > update cliente set id = 5 where id = 2;\
+ERROR: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`tbd_e2`.`factura`, CONSTRAINT `factura_ibfk_2` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > alter table factura add constraint foreign key (idCliente) references cliente(id) on delete cascade on update cascade;\
+Query OK, 5 rows affected (0.0621 sec)\
+\
+Records: 5  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > update cliente set id = 5 where id = 2;\
+ERROR: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`tbd_e2`.`factura`, CONSTRAINT `factura_ibfk_2` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > select * from factura;\
++-------+-----------+\
+| folio | idCliente |\
++-------+-----------+\
+|     2 |         2 |\
+|     3 |         2 |\
+|     6 |         2 |\
+|     5 |         3 |\
+|     8 |         3 |\
++-------+-----------+\
+5 rows in set (0.0005 sec)\
+ MySQL  localhost  tbd_e2  SQL > update cliente set id = 5 where id = 2;\
+ERROR: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`tbd_e2`.`factura`, CONSTRAINT `factura_ibfk_2` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > delete from cliente;\
+ERROR: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`tbd_e2`.`factura`, CONSTRAINT `factura_ibfk_2` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > alter table factura add constraint\
+                              -> foreign key (idCliente)\
+                              -> references cliente(id)\
+                              -> on delete cascade\
+                              -> on update cascade;\
+Query OK, 5 rows affected (0.0526 sec)\
+\
+Records: 5  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > update cliente set id = 5 where id = 2;\
+ERROR: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`tbd_e2`.`factura`, CONSTRAINT `factura_ibfk_2` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > alter table factura add constraint foreign key (idCliente) references cliente(id) on delete cascade on update cascade;\
+Query OK, 5 rows affected (0.0463 sec)\
+\
+Records: 5  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > update cliente set id = 5 where id = 2;\
+ERROR: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`tbd_e2`.`factura`, CONSTRAINT `factura_ibfk_2` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`))\
+ MySQL  localhost  tbd_e2  SQL > delete from cliente;\
+Query OK, 3 rows affected (0.0028 sec)\
+ MySQL  localhost  tbd_e2  SQL > select * from cliente;\
+Empty set (0.0004 sec)\
+ MySQL  localhost  tbd_e2  SQL > select * from fractura;\
+ERROR: 1146 (42S02): Table 'tbd_e2.fractura' doesn't exist\
+ MySQL  localhost  tbd_e2  SQL > select * from factura;\
+Empty set (0.0004 sec)\
+ MySQL  localhost  tbd_e2  SQL > alter table factura\
+                              -> drop constraint factura_ibfk_1;\
+ERROR: 3940 (HY000): Constraint 'factura_ibfk_1' does not exist.\
+ MySQL  localhost  tbd_e2  SQL > alter table factura drop constraint factura_ibfk_3;\
+Query OK, 0 rows affected (0.0120 sec)\
+\
+Records: 0  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > desc cliente;\
++----------+-------------+------+-----+---------+----------------+\
+| Field    | Type        | Null | Key | Default | Extra          |\
++----------+-------------+------+-----+---------+----------------+\
+| id       | int         | NO   | PRI | NULL    | auto_increment |\
+| nombre   | varchar(50) | NO   |     | NULL    |                |\
+| apellido | varchar(50) | YES  |     | NULL    |                |\
+| rfc      | varchar(13) | NO   |     | NULL    |                |\
++----------+-------------+------+-----+---------+----------------+\
+4 rows in set (0.0081 sec)\
+ MySQL  localhost  tbd_e2  SQL > insert into cliente(nombre, apellido, rfc) values("Paco", "Estre\'f1ido", "1234567891233");\
+Query OK, 1 row affected (0.0050 sec)\
+ MySQL  localhost  tbd_e2  SQL > select * from cliente;\
++----+--------+-----------+---------------+\
+| id | nombre | apellido  | rfc           |\
++----+--------+-----------+---------------+\
+|  4 | Paco   | Estre\'f1ido | 1234567891233 |\
++----+--------+-----------+---------------+\
+1 row in set (0.0005 sec)\
+ MySQL  localhost  tbd_e2  SQL > desc factura;\
++-----------+------+------+-----+---------+----------------+\
+| Field     | Type | Null | Key | Default | Extra          |\
++-----------+------+------+-----+---------+----------------+\
+| folio     | int  | NO   | PRI | NULL    | auto_increment |\
+| idCliente | int  | NO   | MUL | NULL    |                |\
++-----------+------+------+-----+---------+----------------+\
+2 rows in set (0.0020 sec)\
+ MySQL  localhost  tbd_e2  SQL > insert into factura(idCliente) values(4), (4), (4);\
+Query OK, 3 rows affected (0.0024 sec)\
+\
+Records: 3  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > select * from factura;\
++-------+-----------+\
+| folio | idCliente |\
++-------+-----------+\
+|    10 |         4 |\
+|    11 |         4 |\
+|    12 |         4 |\
++-------+-----------+\
+3 rows in set (0.0004 sec)\
+ MySQL  localhost  tbd_e2  SQL > desc factura;\
++-----------+------+------+-----+---------+----------------+\
+| Field     | Type | Null | Key | Default | Extra          |\
++-----------+------+------+-----+---------+----------------+\
+| folio     | int  | NO   | PRI | NULL    | auto_increment |\
+| idCliente | int  | NO   | MUL | NULL    |                |\
++-----------+------+------+-----+---------+----------------+\
+2 rows in set (0.0020 sec)\
+ MySQL  localhost  tbd_e2  SQL > alter table factura\
+                              -> add constraint foreign key(idCliente)\
+                              -> references cliente(id) on delete set null\
+                              -> on cascade set null;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'cascade set null' at line 4\
+ MySQL  localhost  tbd_e2  SQL > alter table factura add constraint foreign key(idCliente) references cliente(id) on delete no action cascade no action;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'cascade no action' at line 1\
+ MySQL  localhost  tbd_e2  SQL > alter table factura add constraint foreign key(idCliente) references cliente(id) on delete no action on update no action;\
+Query OK, 3 rows affected (0.0515 sec)\
+\
+Records: 3  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > update from cliente set id = 7 where id = 4;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from cliente set id = 7 where id = 4' at line 1\
+ MySQL  localhost  tbd_e2  SQL > update from cliente set id = 5 where id = 4;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from cliente set id = 5 where id = 4' at line 1\
+ MySQL  localhost  tbd_e2  SQL > alter table factura add constraint foreign key(idCliente) references cliente(id) on delete cascade\
+                              -> on update cascade;\
+Query OK, 3 rows affected (0.0539 sec)\
+\
+Records: 3  Duplicates: 0  Warnings: 0\
+ MySQL  localhost  tbd_e2  SQL > update from cliente set id = 5 where id = 4;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from cliente set id = 5 where id = 4' at line 1\
+ MySQL  localhost  tbd_e2  SQL >}
