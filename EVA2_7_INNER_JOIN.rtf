@@ -1,0 +1,2225 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 EVA2_7_INNER_JOIN\
+Isaac Guzm\'e1n, 22550331\
+\
+mysqlsh\
+ MySQL  localhost  sakila  SQL > select customer_id, first_name, last_name from customer;\
++-------------+---------------------+--------------+\
+| customer_id | first_name          | last_name    |\
++-------------+---------------------+--------------+\
+|           1 | MARY                | SMITH        |\
+|           2 | PATRICIA            | JOHNSON      |\
+|           3 | LINDA               | WILLIAMS     |\
+|           4 | BARBARA             | JONES        |\
+|           5 | ELIZABETH           | BROWN        |\
+|           6 | JENNIFER            | DAVIS        |\
+|           7 | MARIA               | MILLER       |\
+|           8 | SUSAN               | WILSON       |\
+|           9 | MARGARET            | MOORE        |\
+|          10 | DOROTHY             | TAYLOR       |\
+|          11 | LISA                | ANDERSON     |\
+|          12 | NANCY               | THOMAS       |\
+|          13 | KAREN               | JACKSON      |\
+|          14 | BETTY               | WHITE        |\
+|          15 | HELEN               | HARRIS       |\
+|          16 | SANDRA              | MARTIN       |\
+|          17 | DONNA               | THOMPSON     |\
+|          18 | CAROL               | GARCIA       |\
+|          19 | RUTH                | MARTINEZ     |\
+|          20 | SHARON              | ROBINSON     |\
+|          21 | MICHELLE            | CLARK        |\
+|          22 | LAURA               | RODRIGUEZ    |\
+|          23 | SARAH               | LEWIS        |\
+|          24 | KIMBERLY            | LEE          |\
+|          25 | DEBORAH             | WALKER       |\
+|          26 | JESSICA             | HALL         |\
+|          27 | SHIRLEY             | ALLEN        |\
+|          28 | CYNTHIA             | YOUNG        |\
+|          29 | ANGELA              | HERNANDEZ    |\
+|          30 | MELISSA             | KING         |\
+|          31 | BRENDA              | WRIGHT       |\
+|          32 | AMY                 | LOPEZ        |\
+|          33 | ANNA                | HILL         |\
+|          34 | REBECCA             | SCOTT        |\
+|          35 | VIRGINIA            | GREEN        |\
+|          36 | KATHLEEN            | ADAMS        |\
+|          37 | PAMELA              | BAKER        |\
+|          38 | MARTHA              | GONZALEZ     |\
+|          39 | DEBRA               | NELSON       |\
+|          40 | AMANDA              | CARTER       |\
+|          41 | STEPHANIE           | MITCHELL     |\
+|          42 | CAROLYN             | PEREZ        |\
+|          43 | CHRISTINE           | ROBERTS      |\
+|          44 | MARIE               | TURNER       |\
+|          45 | JANET               | PHILLIPS     |\
+|          46 | CATHERINE           | CAMPBELL     |\
+|          47 | FRANCES             | PARKER       |\
+|          48 | ANN                 | EVANS        |\
+|          49 | JOYCE               | EDWARDS      |\
+|          50 | DIANE               | COLLINS      |\
+|          51 | ALICE               | STEWART      |\
+|          52 | JULIE               | SANCHEZ      |\
+|          53 | HEATHER             | MORRIS       |\
+|          54 | TERESA              | ROGERS       |\
+|          55 | DORIS               | REED         |\
+|          56 | GLORIA              | COOK         |\
+|          57 | EVELYN              | MORGAN       |\
+|          58 | JEAN                | BELL         |\
+|          59 | CHERYL              | MURPHY       |\
+|          60 | MILDRED             | BAILEY       |\
+|          61 | KATHERINE           | RIVERA       |\
+|          62 | JOAN                | COOPER       |\
+|          63 | ASHLEY              | RICHARDSON   |\
+|          64 | JUDITH              | COX          |\
+|          65 | ROSE                | HOWARD       |\
+|          66 | JANICE              | WARD         |\
+|          67 | KELLY               | TORRES       |\
+|          68 | NICOLE              | PETERSON     |\
+|          69 | JUDY                | GRAY         |\
+|          70 | CHRISTINA           | RAMIREZ      |\
+|          71 | KATHY               | JAMES        |\
+|          72 | THERESA             | WATSON       |\
+|          73 | BEVERLY             | BROOKS       |\
+|          74 | DENISE              | KELLY        |\
+|          75 | TAMMY               | SANDERS      |\
+|          76 | IRENE               | PRICE        |\
+|          77 | JANE                | BENNETT      |\
+|          78 | LORI                | WOOD         |\
+|          79 | RACHEL              | BARNES       |\
+|          80 | MARILYN             | ROSS         |\
+|          81 | ANDREA              | HENDERSON    |\
+|          82 | KATHRYN             | COLEMAN      |\
+|          83 | LOUISE              | JENKINS      |\
+|          84 | SARA                | PERRY        |\
+|          85 | ANNE                | POWELL       |\
+|          86 | JACQUELINE          | LONG         |\
+|          87 | WANDA               | PATTERSON    |\
+|          88 | BONNIE              | HUGHES       |\
+|          89 | JULIA               | FLORES       |\
+|          90 | RUBY                | WASHINGTON   |\
+|          91 | LOIS                | BUTLER       |\
+|          92 | TINA                | SIMMONS      |\
+|          93 | PHYLLIS             | FOSTER       |\
+|          94 | NORMA               | GONZALES     |\
+|          95 | PAULA               | BRYANT       |\
+|          96 | DIANA               | ALEXANDER    |\
+|          97 | ANNIE               | RUSSELL      |\
+|          98 | LILLIAN             | GRIFFIN      |\
+|          99 | EMILY               | DIAZ         |\
+|         100 | ROBIN               | HAYES        |\
+|         101 | PEGGY               | MYERS        |\
+|         102 | CRYSTAL             | FORD         |\
+|         103 | GLADYS              | HAMILTON     |\
+|         104 | RITA                | GRAHAM       |\
+|         105 | DAWN                | SULLIVAN     |\
+|         106 | CONNIE              | WALLACE      |\
+|         107 | FLORENCE            | WOODS        |\
+|         108 | TRACY               | COLE         |\
+|         109 | EDNA                | WEST         |\
+|         110 | TIFFANY             | JORDAN       |\
+|         111 | CARMEN              | OWENS        |\
+|         112 | ROSA                | REYNOLDS     |\
+|         113 | CINDY               | FISHER       |\
+|         114 | GRACE               | ELLIS        |\
+|         115 | WENDY               | HARRISON     |\
+|         116 | VICTORIA            | GIBSON       |\
+|         117 | EDITH               | MCDONALD     |\
+|         118 | KIM                 | CRUZ         |\
+|         119 | SHERRY              | MARSHALL     |\
+|         120 | SYLVIA              | ORTIZ        |\
+|         121 | JOSEPHINE           | GOMEZ        |\
+|         122 | THELMA              | MURRAY       |\
+|         123 | SHANNON             | FREEMAN      |\
+|         124 | SHEILA              | WELLS        |\
+|         125 | ETHEL               | WEBB         |\
+|         126 | ELLEN               | SIMPSON      |\
+|         127 | ELAINE              | STEVENS      |\
+|         128 | MARJORIE            | TUCKER       |\
+|         129 | CARRIE              | PORTER       |\
+|         130 | CHARLOTTE           | HUNTER       |\
+|         131 | MONICA              | HICKS        |\
+|         132 | ESTHER              | CRAWFORD     |\
+|         133 | PAULINE             | HENRY        |\
+|         134 | EMMA                | BOYD         |\
+|         135 | JUANITA             | MASON        |\
+|         136 | ANITA               | MORALES      |\
+|         137 | RHONDA              | KENNEDY      |\
+|         138 | HAZEL               | WARREN       |\
+|         139 | AMBER               | DIXON        |\
+|         140 | EVA                 | RAMOS        |\
+|         141 | DEBBIE              | REYES        |\
+|         142 | APRIL               | BURNS        |\
+|         143 | LESLIE              | GORDON       |\
+|         144 | CLARA               | SHAW         |\
+|         145 | LUCILLE             | HOLMES       |\
+|         146 | JAMIE               | RICE         |\
+|         147 | JOANNE              | ROBERTSON    |\
+|         148 | ELEANOR             | HUNT         |\
+|         149 | VALERIE             | BLACK        |\
+|         150 | DANIELLE            | DANIELS      |\
+|         151 | MEGAN               | PALMER       |\
+|         152 | ALICIA              | MILLS        |\
+|         153 | SUZANNE             | NICHOLS      |\
+|         154 | MICHELE             | GRANT        |\
+|         155 | GAIL                | KNIGHT       |\
+|         156 | BERTHA              | FERGUSON     |\
+|         157 | DARLENE             | ROSE         |\
+|         158 | VERONICA            | STONE        |\
+|         159 | JILL                | HAWKINS      |\
+|         160 | ERIN                | DUNN         |\
+|         161 | GERALDINE           | PERKINS      |\
+|         162 | LAUREN              | HUDSON       |\
+|         163 | CATHY               | SPENCER      |\
+|         164 | JOANN               | GARDNER      |\
+|         165 | LORRAINE            | STEPHENS     |\
+|         166 | LYNN                | PAYNE        |\
+|         167 | SALLY               | PIERCE       |\
+|         168 | REGINA              | BERRY        |\
+|         169 | ERICA               | MATTHEWS     |\
+|         170 | BEATRICE            | ARNOLD       |\
+|         171 | DOLORES             | WAGNER       |\
+|         172 | BERNICE             | WILLIS       |\
+|         173 | AUDREY              | RAY          |\
+|         174 | YVONNE              | WATKINS      |\
+|         175 | ANNETTE             | OLSON        |\
+|         176 | JUNE                | CARROLL      |\
+|         177 | SAMANTHA            | DUNCAN       |\
+|         178 | MARION              | SNYDER       |\
+|         179 | DANA                | HART         |\
+|         180 | STACY               | CUNNINGHAM   |\
+|         181 | ANA                 | BRADLEY      |\
+|         182 | RENEE               | LANE         |\
+|         183 | IDA                 | ANDREWS      |\
+|         184 | VIVIAN              | RUIZ         |\
+|         185 | ROBERTA             | HARPER       |\
+|         186 | HOLLY               | FOX          |\
+|         187 | BRITTANY            | RILEY        |\
+|         188 | MELANIE             | ARMSTRONG    |\
+|         189 | LORETTA             | CARPENTER    |\
+|         190 | YOLANDA             | WEAVER       |\
+|         191 | JEANETTE            | GREENE       |\
+|         192 | LAURIE              | LAWRENCE     |\
+|         193 | KATIE               | ELLIOTT      |\
+|         194 | KRISTEN             | CHAVEZ       |\
+|         195 | VANESSA             | SIMS         |\
+|         196 | ALMA                | AUSTIN       |\
+|         197 | SUE                 | PETERS       |\
+|         198 | ELSIE               | KELLEY       |\
+|         199 | BETH                | FRANKLIN     |\
+|         200 | JEANNE              | LAWSON       |\
+|         201 | VICKI               | FIELDS       |\
+|         202 | CARLA               | GUTIERREZ    |\
+|         203 | TARA                | RYAN         |\
+|         204 | ROSEMARY            | SCHMIDT      |\
+|         205 | EILEEN              | CARR         |\
+|         206 | TERRI               | VASQUEZ      |\
+|         207 | GERTRUDE            | CASTILLO     |\
+|         208 | LUCY                | WHEELER      |\
+|         209 | TONYA               | CHAPMAN      |\
+|         210 | ELLA                | OLIVER       |\
+|         211 | STACEY              | MONTGOMERY   |\
+|         212 | WILMA               | RICHARDS     |\
+|         213 | GINA                | WILLIAMSON   |\
+|         214 | KRISTIN             | JOHNSTON     |\
+|         215 | JESSIE              | BANKS        |\
+|         216 | NATALIE             | MEYER        |\
+|         217 | AGNES               | BISHOP       |\
+|         218 | VERA                | MCCOY        |\
+|         219 | WILLIE              | HOWELL       |\
+|         220 | CHARLENE            | ALVAREZ      |\
+|         221 | BESSIE              | MORRISON     |\
+|         222 | DELORES             | HANSEN       |\
+|         223 | MELINDA             | FERNANDEZ    |\
+|         224 | PEARL               | GARZA        |\
+|         225 | ARLENE              | HARVEY       |\
+|         226 | MAUREEN             | LITTLE       |\
+|         227 | COLLEEN             | BURTON       |\
+|         228 | ALLISON             | STANLEY      |\
+|         229 | TAMARA              | NGUYEN       |\
+|         230 | JOY                 | GEORGE       |\
+|         231 | GEORGIA             | JACOBS       |\
+|         232 | CONSTANCE           | REID         |\
+|         233 | LILLIE              | KIM          |\
+|         234 | CLAUDIA             | FULLER       |\
+|         235 | JACKIE              | LYNCH        |\
+|         236 | MARCIA              | DEAN         |\
+|         237 | TANYA               | GILBERT      |\
+|         238 | NELLIE              | GARRETT      |\
+|         239 | MINNIE              | ROMERO       |\
+|         240 | MARLENE             | WELCH        |\
+|         241 | HEIDI               | LARSON       |\
+|         242 | GLENDA              | FRAZIER      |\
+|         243 | LYDIA               | BURKE        |\
+|         244 | VIOLA               | HANSON       |\
+|         245 | COURTNEY            | DAY          |\
+|         246 | MARIAN              | MENDOZA      |\
+|         247 | STELLA              | MORENO       |\
+|         248 | CAROLINE            | BOWMAN       |\
+|         249 | DORA                | MEDINA       |\
+|         250 | JO                  | FOWLER       |\
+|         251 | VICKIE              | BREWER       |\
+|         252 | MATTIE              | HOFFMAN      |\
+|         253 | TERRY               | CARLSON      |\
+|         254 | MAXINE              | SILVA        |\
+|         255 | IRMA                | PEARSON      |\
+|         256 | MABEL               | HOLLAND      |\
+|         257 | MARSHA              | DOUGLAS      |\
+|         258 | MYRTLE              | FLEMING      |\
+|         259 | LENA                | JENSEN       |\
+|         260 | CHRISTY             | VARGAS       |\
+|         261 | DEANNA              | BYRD         |\
+|         262 | PATSY               | DAVIDSON     |\
+|         263 | HILDA               | HOPKINS      |\
+|         264 | GWENDOLYN           | MAY          |\
+|         265 | JENNIE              | TERRY        |\
+|         266 | NORA                | HERRERA      |\
+|         267 | MARGIE              | WADE         |\
+|         268 | NINA                | SOTO         |\
+|         269 | CASSANDRA           | WALTERS      |\
+|         270 | LEAH                | CURTIS       |\
+|         271 | PENNY               | NEAL         |\
+|         272 | KAY                 | CALDWELL     |\
+|         273 | PRISCILLA           | LOWE         |\
+|         274 | NAOMI               | JENNINGS     |\
+|         275 | CAROLE              | BARNETT      |\
+|         276 | BRANDY              | GRAVES       |\
+|         277 | OLGA                | JIMENEZ      |\
+|         278 | BILLIE              | HORTON       |\
+|         279 | DIANNE              | SHELTON      |\
+|         280 | TRACEY              | BARRETT      |\
+|         281 | LEONA               | OBRIEN       |\
+|         282 | JENNY               | CASTRO       |\
+|         283 | FELICIA             | SUTTON       |\
+|         284 | SONIA               | GREGORY      |\
+|         285 | MIRIAM              | MCKINNEY     |\
+|         286 | VELMA               | LUCAS        |\
+|         287 | BECKY               | MILES        |\
+|         288 | BOBBIE              | CRAIG        |\
+|         289 | VIOLET              | RODRIQUEZ    |\
+|         290 | KRISTINA            | CHAMBERS     |\
+|         291 | TONI                | HOLT         |\
+|         292 | MISTY               | LAMBERT      |\
+|         293 | MAE                 | FLETCHER     |\
+|         294 | SHELLY              | WATTS        |\
+|         295 | DAISY               | BATES        |\
+|         296 | RAMONA              | HALE         |\
+|         297 | SHERRI              | RHODES       |\
+|         298 | ERIKA               | PENA         |\
+|         299 | JAMES               | GANNON       |\
+|         300 | JOHN                | FARNSWORTH   |\
+|         301 | ROBERT              | BAUGHMAN     |\
+|         302 | MICHAEL             | SILVERMAN    |\
+|         303 | WILLIAM             | SATTERFIELD  |\
+|         304 | DAVID               | ROYAL        |\
+|         305 | RICHARD             | MCCRARY      |\
+|         306 | CHARLES             | KOWALSKI     |\
+|         307 | JOSEPH              | JOY          |\
+|         308 | THOMAS              | GRIGSBY      |\
+|         309 | CHRISTOPHER         | GRECO        |\
+|         310 | DANIEL              | CABRAL       |\
+|         311 | PAUL                | TROUT        |\
+|         312 | MARK                | RINEHART     |\
+|         313 | DONALD              | MAHON        |\
+|         314 | GEORGE              | LINTON       |\
+|         315 | KENNETH             | GOODEN       |\
+|         316 | STEVEN              | CURLEY       |\
+|         317 | EDWARD              | BAUGH        |\
+|         318 | BRIAN               | WYMAN        |\
+|         319 | RONALD              | WEINER       |\
+|         320 | ANTHONY             | SCHWAB       |\
+|         321 | KEVIN               | SCHULER      |\
+|         322 | JASON               | MORRISSEY    |\
+|         323 | MATTHEW             | MAHAN        |\
+|         324 | GARY                | COY          |\
+|         325 | TIMOTHY             | BUNN         |\
+|         326 | JOSE                | ANDREW       |\
+|         327 | LARRY               | THRASHER     |\
+|         328 | JEFFREY             | SPEAR        |\
+|         329 | FRANK               | WAGGONER     |\
+|         330 | SCOTT               | SHELLEY      |\
+|         331 | ERIC                | ROBERT       |\
+|         332 | STEPHEN             | QUALLS       |\
+|         333 | ANDREW              | PURDY        |\
+|         334 | RAYMOND             | MCWHORTER    |\
+|         335 | GREGORY             | MAULDIN      |\
+|         336 | JOSHUA              | MARK         |\
+|         337 | JERRY               | JORDON       |\
+|         338 | DENNIS              | GILMAN       |\
+|         339 | WALTER              | PERRYMAN     |\
+|         340 | PATRICK             | NEWSOM       |\
+|         341 | PETER               | MENARD       |\
+|         342 | HAROLD              | MARTINO      |\
+|         343 | DOUGLAS             | GRAF         |\
+|         344 | HENRY               | BILLINGSLEY  |\
+|         345 | CARL                | ARTIS        |\
+|         346 | ARTHUR              | SIMPKINS     |\
+|         347 | RYAN                | SALISBURY    |\
+|         348 | ROGER               | QUINTANILLA  |\
+|         349 | JOE                 | GILLILAND    |\
+|         350 | JUAN                | FRALEY       |\
+|         351 | JACK                | FOUST        |\
+|         352 | ALBERT              | CROUSE       |\
+|         353 | JONATHAN            | SCARBOROUGH  |\
+|         354 | JUSTIN              | NGO          |\
+|         355 | TERRY               | GRISSOM      |\
+|         356 | GERALD              | FULTZ        |\
+|         357 | KEITH               | RICO         |\
+|         358 | SAMUEL              | MARLOW       |\
+|         359 | WILLIE              | MARKHAM      |\
+|         360 | RALPH               | MADRIGAL     |\
+|         361 | LAWRENCE            | LAWTON       |\
+|         362 | NICHOLAS            | BARFIELD     |\
+|         363 | ROY                 | WHITING      |\
+|         364 | BENJAMIN            | VARNEY       |\
+|         365 | BRUCE               | SCHWARZ      |\
+|         366 | BRANDON             | HUEY         |\
+|         367 | ADAM                | GOOCH        |\
+|         368 | HARRY               | ARCE         |\
+|         369 | FRED                | WHEAT        |\
+|         370 | WAYNE               | TRUONG       |\
+|         371 | BILLY               | POULIN       |\
+|         372 | STEVE               | MACKENZIE    |\
+|         373 | LOUIS               | LEONE        |\
+|         374 | JEREMY              | HURTADO      |\
+|         375 | AARON               | SELBY        |\
+|         376 | RANDY               | GAITHER      |\
+|         377 | HOWARD              | FORTNER      |\
+|         378 | EUGENE              | CULPEPPER    |\
+|         379 | CARLOS              | COUGHLIN     |\
+|         380 | RUSSELL             | BRINSON      |\
+|         381 | BOBBY               | BOUDREAU     |\
+|         382 | VICTOR              | BARKLEY      |\
+|         383 | MARTIN              | BALES        |\
+|         384 | ERNEST              | STEPP        |\
+|         385 | PHILLIP             | HOLM         |\
+|         386 | TODD                | TAN          |\
+|         387 | JESSE               | SCHILLING    |\
+|         388 | CRAIG               | MORRELL      |\
+|         389 | ALAN                | KAHN         |\
+|         390 | SHAWN               | HEATON       |\
+|         391 | CLARENCE            | GAMEZ        |\
+|         392 | SEAN                | DOUGLASS     |\
+|         393 | PHILIP              | CAUSEY       |\
+|         394 | CHRIS               | BROTHERS     |\
+|         395 | JOHNNY              | TURPIN       |\
+|         396 | EARL                | SHANKS       |\
+|         397 | JIMMY               | SCHRADER     |\
+|         398 | ANTONIO             | MEEK         |\
+|         399 | DANNY               | ISOM         |\
+|         400 | BRYAN               | HARDISON     |\
+|         401 | TONY                | CARRANZA     |\
+|         402 | LUIS                | YANEZ        |\
+|         403 | MIKE                | WAY          |\
+|         404 | STANLEY             | SCROGGINS    |\
+|         405 | LEONARD             | SCHOFIELD    |\
+|         406 | NATHAN              | RUNYON       |\
+|         407 | DALE                | RATCLIFF     |\
+|         408 | MANUEL              | MURRELL      |\
+|         409 | RODNEY              | MOELLER      |\
+|         410 | CURTIS              | IRBY         |\
+|         411 | NORMAN              | CURRIER      |\
+|         412 | ALLEN               | BUTTERFIELD  |\
+|         413 | MARVIN              | YEE          |\
+|         414 | VINCENT             | RALSTON      |\
+|         415 | GLENN               | PULLEN       |\
+|         416 | JEFFERY             | PINSON       |\
+|         417 | TRAVIS              | ESTEP        |\
+|         418 | JEFF                | EAST         |\
+|         419 | CHAD                | CARBONE      |\
+|         420 | JACOB               | LANCE        |\
+|         421 | LEE                 | HAWKS        |\
+|         422 | MELVIN              | ELLINGTON    |\
+|         423 | ALFRED              | CASILLAS     |\
+|         424 | KYLE                | SPURLOCK     |\
+|         425 | FRANCIS             | SIKES        |\
+|         426 | BRADLEY             | MOTLEY       |\
+|         427 | JESUS               | MCCARTNEY    |\
+|         428 | HERBERT             | KRUGER       |\
+|         429 | FREDERICK           | ISBELL       |\
+|         430 | RAY                 | HOULE        |\
+|         431 | JOEL                | FRANCISCO    |\
+|         432 | EDWIN               | BURK         |\
+|         433 | DON                 | BONE         |\
+|         434 | EDDIE               | TOMLIN       |\
+|         435 | RICKY               | SHELBY       |\
+|         436 | TROY                | QUIGLEY      |\
+|         437 | RANDALL             | NEUMANN      |\
+|         438 | BARRY               | LOVELACE     |\
+|         439 | ALEXANDER           | FENNELL      |\
+|         440 | BERNARD             | COLBY        |\
+|         441 | MARIO               | CHEATHAM     |\
+|         442 | LEROY               | BUSTAMANTE   |\
+|         443 | FRANCISCO           | SKIDMORE     |\
+|         444 | MARCUS              | HIDALGO      |\
+|         445 | MICHEAL             | FORMAN       |\
+|         446 | THEODORE            | CULP         |\
+|         447 | CLIFFORD            | BOWENS       |\
+|         448 | MIGUEL              | BETANCOURT   |\
+|         449 | OSCAR               | AQUINO       |\
+|         450 | JAY                 | ROBB         |\
+|         451 | JIM                 | REA          |\
+|         452 | TOM                 | MILNER       |\
+|         453 | CALVIN              | MARTEL       |\
+|         454 | ALEX                | GRESHAM      |\
+|         455 | JON                 | WILES        |\
+|         456 | RONNIE              | RICKETTS     |\
+|         457 | BILL                | GAVIN        |\
+|         458 | LLOYD               | DOWD         |\
+|         459 | TOMMY               | COLLAZO      |\
+|         460 | LEON                | BOSTIC       |\
+|         461 | DEREK               | BLAKELY      |\
+|         462 | WARREN              | SHERROD      |\
+|         463 | DARRELL             | POWER        |\
+|         464 | JEROME              | KENYON       |\
+|         465 | FLOYD               | GANDY        |\
+|         466 | LEO                 | EBERT        |\
+|         467 | ALVIN               | DELOACH      |\
+|         468 | TIM                 | CARY         |\
+|         469 | WESLEY              | BULL         |\
+|         470 | GORDON              | ALLARD       |\
+|         471 | DEAN                | SAUER        |\
+|         472 | GREG                | ROBINS       |\
+|         473 | JORGE               | OLIVARES     |\
+|         474 | DUSTIN              | GILLETTE     |\
+|         475 | PEDRO               | CHESTNUT     |\
+|         476 | DERRICK             | BOURQUE      |\
+|         477 | DAN                 | PAINE        |\
+|         478 | LEWIS               | LYMAN        |\
+|         479 | ZACHARY             | HITE         |\
+|         480 | COREY               | HAUSER       |\
+|         481 | HERMAN              | DEVORE       |\
+|         482 | MAURICE             | CRAWLEY      |\
+|         483 | VERNON              | CHAPA        |\
+|         484 | ROBERTO             | VU           |\
+|         485 | CLYDE               | TOBIAS       |\
+|         486 | GLEN                | TALBERT      |\
+|         487 | HECTOR              | POINDEXTER   |\
+|         488 | SHANE               | MILLARD      |\
+|         489 | RICARDO             | MEADOR       |\
+|         490 | SAM                 | MCDUFFIE     |\
+|         491 | RICK                | MATTOX       |\
+|         492 | LESTER              | KRAUS        |\
+|         493 | BRENT               | HARKINS      |\
+|         494 | RAMON               | CHOATE       |\
+|         495 | CHARLIE             | BESS         |\
+|         496 | TYLER               | WREN         |\
+|         497 | GILBERT             | SLEDGE       |\
+|         498 | GENE                | SANBORN      |\
+|         499 | MARC                | OUTLAW       |\
+|         500 | REGINALD            | KINDER       |\
+|         501 | RUBEN               | GEARY        |\
+|         502 | BRETT               | CORNWELL     |\
+|         503 | ANGEL               | BARCLAY      |\
+|         504 | NATHANIEL           | ADAM         |\
+|         505 | RAFAEL              | ABNEY        |\
+|         506 | LESLIE              | SEWARD       |\
+|         507 | EDGAR               | RHOADS       |\
+|         508 | MILTON              | HOWLAND      |\
+|         509 | RAUL                | FORTIER      |\
+|         510 | BEN                 | EASTER       |\
+|         511 | CHESTER             | BENNER       |\
+|         512 | CECIL               | VINES        |\
+|         513 | DUANE               | TUBBS        |\
+|         514 | FRANKLIN            | TROUTMAN     |\
+|         515 | ANDRE               | RAPP         |\
+|         516 | ELMER               | NOE          |\
+|         517 | BRAD                | MCCURDY      |\
+|         518 | GABRIEL             | HARDER       |\
+|         519 | RON                 | DELUCA       |\
+|         520 | MITCHELL            | WESTMORELAND |\
+|         521 | ROLAND              | SOUTH        |\
+|         522 | ARNOLD              | HAVENS       |\
+|         523 | HARVEY              | GUAJARDO     |\
+|         524 | JARED               | ELY          |\
+|         525 | ADRIAN              | CLARY        |\
+|         526 | KARL                | SEAL         |\
+|         527 | CORY                | MEEHAN       |\
+|         528 | CLAUDE              | HERZOG       |\
+|         529 | ERIK                | GUILLEN      |\
+|         530 | DARRYL              | ASHCRAFT     |\
+|         531 | JAMIE               | WAUGH        |\
+|         532 | NEIL                | RENNER       |\
+|         533 | JESSIE              | MILAM        |\
+|         534 | CHRISTIAN           | JUNG         |\
+|         535 | JAVIER              | ELROD        |\
+|         536 | FERNANDO            | CHURCHILL    |\
+|         537 | CLINTON             | BUFORD       |\
+|         538 | TED                 | BREAUX       |\
+|         539 | MATHEW              | BOLIN        |\
+|         540 | TYRONE              | ASHER        |\
+|         541 | DARREN              | WINDHAM      |\
+|         542 | LONNIE              | TIRADO       |\
+|         543 | LANCE               | PEMBERTON    |\
+|         544 | CODY                | NOLEN        |\
+|         545 | JULIO               | NOLAND       |\
+|         546 | KELLY               | KNOTT        |\
+|         547 | KURT                | EMMONS       |\
+|         548 | ALLAN               | CORNISH      |\
+|         549 | NELSON              | CHRISTENSON  |\
+|         550 | GUY                 | BROWNLEE     |\
+|         551 | CLAYTON             | BARBEE       |\
+|         552 | HUGH                | WALDROP      |\
+|         553 | MAX                 | PITT         |\
+|         554 | DWAYNE              | OLVERA       |\
+|         555 | DWIGHT              | LOMBARDI     |\
+|         556 | ARMANDO             | GRUBER       |\
+|         557 | FELIX               | GAFFNEY      |\
+|         558 | JIMMIE              | EGGLESTON    |\
+|         559 | EVERETT             | BANDA        |\
+|         560 | JORDAN              | ARCHULETA    |\
+|         561 | IAN                 | STILL        |\
+|         562 | WALLACE             | SLONE        |\
+|         563 | KEN                 | PREWITT      |\
+|         564 | BOB                 | PFEIFFER     |\
+|         565 | JAIME               | NETTLES      |\
+|         566 | CASEY               | MENA         |\
+|         567 | ALFREDO             | MCADAMS      |\
+|         568 | ALBERTO             | HENNING      |\
+|         569 | DAVE                | GARDINER     |\
+|         570 | IVAN                | CROMWELL     |\
+|         571 | JOHNNIE             | CHISHOLM     |\
+|         572 | SIDNEY              | BURLESON     |\
+|         573 | BYRON               | BOX          |\
+|         574 | JULIAN              | VEST         |\
+|         575 | ISAAC               | OGLESBY      |\
+|         576 | MORRIS              | MCCARTER     |\
+|         577 | CLIFTON             | MALCOLM      |\
+|         578 | WILLARD             | LUMPKIN      |\
+|         579 | DARYL               | LARUE        |\
+|         580 | ROSS                | GREY         |\
+|         581 | VIRGIL              | WOFFORD      |\
+|         582 | ANDY                | VANHORN      |\
+|         583 | MARSHALL            | THORN        |\
+|         584 | SALVADOR            | TEEL         |\
+|         585 | PERRY               | SWAFFORD     |\
+|         586 | KIRK                | STCLAIR      |\
+|         587 | SERGIO              | STANFIELD    |\
+|         588 | MARION              | OCAMPO       |\
+|         589 | TRACY               | HERRMANN     |\
+|         590 | SETH                | HANNON       |\
+|         591 | KENT                | ARSENAULT    |\
+|         592 | TERRANCE            | ROUSH        |\
+|         593 | RENE                | MCALISTER    |\
+|         594 | EDUARDO             | HIATT        |\
+|         595 | TERRENCE            | GUNDERSON    |\
+|         596 | ENRIQUE             | FORSYTHE     |\
+|         597 | FREDDIE             | DUGGAN       |\
+|         598 | WADE                | DELVALLE     |\
+|         599 | AUSTIN              | CINTRON      |\
+|         600 | JajajaMellamoJajaja | Paquinez     |\
++-------------+---------------------+--------------+\
+600 rows in set (0.0141 sec)\
+ MySQL  localhost  sakila  SQL > desc payment;\
++--------------+-------------------+------+-----+-------------------+-----------------------------------------------+\
+| Field        | Type              | Null | Key | Default           | Extra                                         |\
++--------------+-------------------+------+-----+-------------------+-----------------------------------------------+\
+| payment_id   | smallint unsigned | NO   | PRI | NULL              | auto_increment                                |\
+| customer_id  | smallint unsigned | NO   | MUL | NULL              |                                               |\
+| staff_id     | tinyint unsigned  | NO   | MUL | NULL              |                                               |\
+| rental_id    | int               | YES  | MUL | NULL              |                                               |\
+| amount       | decimal(5,2)      | NO   |     | NULL              |                                               |\
+| payment_date | datetime          | NO   |     | NULL              |                                               |\
+| last_update  | timestamp         | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED on update CURRENT_TIMESTAMP |\
++--------------+-------------------+------+-----+-------------------+-----------------------------------------------+\
+7 rows in set (0.0053 sec)\
+ MySQL  localhost  sakila  SQL > select * from payment limit(50);\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(50)' at line 1\
+ MySQL  localhost  sakila  SQL > select * from payment limit 50;\
++------------+-------------+----------+-----------+--------+---------------------+---------------------+\
+| payment_id | customer_id | staff_id | rental_id | amount | payment_date        | last_update         |\
++------------+-------------+----------+-----------+--------+---------------------+---------------------+\
+|          1 |           1 |        1 |        76 |   2.99 | 2005-05-25 11:30:37 | 2006-02-15 22:12:30 |\
+|          2 |           1 |        1 |       573 |   0.99 | 2005-05-28 10:35:23 | 2006-02-15 22:12:30 |\
+|          3 |           1 |        1 |      1185 |   5.99 | 2005-06-15 00:54:12 | 2006-02-15 22:12:30 |\
+|          4 |           1 |        2 |      1422 |   0.99 | 2005-06-15 18:02:53 | 2006-02-15 22:12:30 |\
+|          5 |           1 |        2 |      1476 |   9.99 | 2005-06-15 21:08:46 | 2006-02-15 22:12:30 |\
+|          6 |           1 |        1 |      1725 |   4.99 | 2005-06-16 15:18:57 | 2006-02-15 22:12:30 |\
+|          7 |           1 |        1 |      2308 |   4.99 | 2005-06-18 08:41:48 | 2006-02-15 22:12:30 |\
+|          8 |           1 |        2 |      2363 |   0.99 | 2005-06-18 13:33:59 | 2006-02-15 22:12:30 |\
+|          9 |           1 |        1 |      3284 |   3.99 | 2005-06-21 06:24:45 | 2006-02-15 22:12:30 |\
+|         10 |           1 |        2 |      4526 |   5.99 | 2005-07-08 03:17:05 | 2006-02-15 22:12:30 |\
+|         11 |           1 |        1 |      4611 |   5.99 | 2005-07-08 07:33:56 | 2006-02-15 22:12:30 |\
+|         12 |           1 |        1 |      5244 |   4.99 | 2005-07-09 13:24:07 | 2006-02-15 22:12:30 |\
+|         13 |           1 |        1 |      5326 |   4.99 | 2005-07-09 16:38:01 | 2006-02-15 22:12:30 |\
+|         14 |           1 |        1 |      6163 |   7.99 | 2005-07-11 10:13:46 | 2006-02-15 22:12:30 |\
+|         15 |           1 |        2 |      7273 |   2.99 | 2005-07-27 11:31:22 | 2006-02-15 22:12:30 |\
+|         16 |           1 |        1 |      7841 |   4.99 | 2005-07-28 09:04:45 | 2006-02-15 22:12:30 |\
+|         17 |           1 |        2 |      8033 |   4.99 | 2005-07-28 16:18:23 | 2006-02-15 22:12:30 |\
+|         18 |           1 |        1 |      8074 |   0.99 | 2005-07-28 17:33:39 | 2006-02-15 22:12:30 |\
+|         19 |           1 |        2 |      8116 |   0.99 | 2005-07-28 19:20:07 | 2006-02-15 22:12:30 |\
+|         20 |           1 |        2 |      8326 |   2.99 | 2005-07-29 03:58:49 | 2006-02-15 22:12:30 |\
+|         21 |           1 |        2 |      9571 |   2.99 | 2005-07-31 02:42:18 | 2006-02-15 22:12:30 |\
+|         22 |           1 |        2 |     10437 |   4.99 | 2005-08-01 08:51:04 | 2006-02-15 22:12:30 |\
+|         23 |           1 |        2 |     11299 |   3.99 | 2005-08-02 15:36:52 | 2006-02-15 22:12:30 |\
+|         24 |           1 |        1 |     11367 |   0.99 | 2005-08-02 18:01:38 | 2006-02-15 22:12:30 |\
+|         25 |           1 |        2 |     11824 |   4.99 | 2005-08-17 12:37:54 | 2006-02-15 22:12:30 |\
+|         26 |           1 |        1 |     12250 |   0.99 | 2005-08-18 03:57:29 | 2006-02-15 22:12:30 |\
+|         27 |           1 |        2 |     13068 |   0.99 | 2005-08-19 09:55:16 | 2006-02-15 22:12:30 |\
+|         28 |           1 |        2 |     13176 |   2.99 | 2005-08-19 13:56:54 | 2006-02-15 22:12:30 |\
+|         29 |           1 |        1 |     14762 |   0.99 | 2005-08-21 23:33:57 | 2006-02-15 22:12:30 |\
+|         30 |           1 |        1 |     14825 |   1.99 | 2005-08-22 01:27:57 | 2006-02-15 22:12:30 |\
+|         31 |           1 |        2 |     15298 |   2.99 | 2005-08-22 19:41:37 | 2006-02-15 22:12:30 |\
+|         32 |           1 |        1 |     15315 |   5.99 | 2005-08-22 20:03:46 | 2006-02-15 22:12:30 |\
+|         33 |           2 |        1 |       320 |   4.99 | 2005-05-27 00:09:24 | 2006-02-15 22:12:30 |\
+|         34 |           2 |        1 |      2128 |   2.99 | 2005-06-17 20:54:58 | 2006-02-15 22:12:30 |\
+|         35 |           2 |        1 |      5636 |   2.99 | 2005-07-10 06:31:24 | 2006-02-15 22:12:30 |\
+|         36 |           2 |        1 |      5755 |   6.99 | 2005-07-10 12:38:56 | 2006-02-15 22:12:30 |\
+|         37 |           2 |        2 |      7346 |   4.99 | 2005-07-27 14:30:42 | 2006-02-15 22:12:30 |\
+|         38 |           2 |        1 |      7376 |   5.99 | 2005-07-27 15:23:02 | 2006-02-15 22:12:30 |\
+|         39 |           2 |        2 |      7459 |   5.99 | 2005-07-27 18:40:20 | 2006-02-15 22:12:30 |\
+|         40 |           2 |        2 |      8230 |   5.99 | 2005-07-29 00:12:59 | 2006-02-15 22:12:30 |\
+|         41 |           2 |        1 |      8598 |   2.99 | 2005-07-29 12:56:59 | 2006-02-15 22:12:30 |\
+|         42 |           2 |        2 |      8705 |   5.99 | 2005-07-29 17:14:29 | 2006-02-15 22:12:30 |\
+|         43 |           2 |        1 |      9031 |   4.99 | 2005-07-30 06:06:10 | 2006-02-15 22:12:30 |\
+|         44 |           2 |        2 |      9236 |  10.99 | 2005-07-30 13:47:43 | 2006-02-15 22:12:30 |\
+|         45 |           2 |        2 |      9248 |   0.99 | 2005-07-30 14:14:11 | 2006-02-15 22:12:30 |\
+|         46 |           2 |        2 |      9296 |   6.99 | 2005-07-30 16:21:13 | 2006-02-15 22:12:30 |\
+|         47 |           2 |        2 |      9465 |   6.99 | 2005-07-30 22:39:53 | 2006-02-15 22:12:30 |\
+|         48 |           2 |        1 |     10136 |   2.99 | 2005-07-31 21:58:56 | 2006-02-15 22:12:30 |\
+|         49 |           2 |        1 |     10466 |   0.99 | 2005-08-01 09:45:26 | 2006-02-15 22:12:30 |\
+|         50 |           2 |        1 |     10918 |   0.99 | 2005-08-02 02:10:56 | 2006-02-15 22:12:30 |\
++------------+-------------+----------+-----------+--------+---------------------+---------------------+\
+50 rows in set (0.0007 sec)\
+ MySQL  localhost  sakila  SQL > select payment_id, customer_id, amount\
+                              -> from payment limit 50;\
++------------+-------------+--------+\
+| payment_id | customer_id | amount |\
++------------+-------------+--------+\
+|          1 |           1 |   2.99 |\
+|          2 |           1 |   0.99 |\
+|          3 |           1 |   5.99 |\
+|          4 |           1 |   0.99 |\
+|          5 |           1 |   9.99 |\
+|          6 |           1 |   4.99 |\
+|          7 |           1 |   4.99 |\
+|          8 |           1 |   0.99 |\
+|          9 |           1 |   3.99 |\
+|         10 |           1 |   5.99 |\
+|         11 |           1 |   5.99 |\
+|         12 |           1 |   4.99 |\
+|         13 |           1 |   4.99 |\
+|         14 |           1 |   7.99 |\
+|         15 |           1 |   2.99 |\
+|         16 |           1 |   4.99 |\
+|         17 |           1 |   4.99 |\
+|         18 |           1 |   0.99 |\
+|         19 |           1 |   0.99 |\
+|         20 |           1 |   2.99 |\
+|         21 |           1 |   2.99 |\
+|         22 |           1 |   4.99 |\
+|         23 |           1 |   3.99 |\
+|         24 |           1 |   0.99 |\
+|         25 |           1 |   4.99 |\
+|         26 |           1 |   0.99 |\
+|         27 |           1 |   0.99 |\
+|         28 |           1 |   2.99 |\
+|         29 |           1 |   0.99 |\
+|         30 |           1 |   1.99 |\
+|         31 |           1 |   2.99 |\
+|         32 |           1 |   5.99 |\
+|         33 |           2 |   4.99 |\
+|         34 |           2 |   2.99 |\
+|         35 |           2 |   2.99 |\
+|         36 |           2 |   6.99 |\
+|         37 |           2 |   4.99 |\
+|         38 |           2 |   5.99 |\
+|         39 |           2 |   5.99 |\
+|         40 |           2 |   5.99 |\
+|         41 |           2 |   2.99 |\
+|         42 |           2 |   5.99 |\
+|         43 |           2 |   4.99 |\
+|         44 |           2 |  10.99 |\
+|         45 |           2 |   0.99 |\
+|         46 |           2 |   6.99 |\
+|         47 |           2 |   6.99 |\
+|         48 |           2 |   2.99 |\
+|         49 |           2 |   0.99 |\
+|         50 |           2 |   0.99 |\
++------------+-------------+--------+\
+50 rows in set (0.0006 sec)\
+ MySQL  localhost  sakila  SQL > select a.payment_id, a.customer_id, a.amount,\
+                              -> b.first_name, b.last_name from\
+                              -> payment a inner join customer b\
+                              -> on a.customer_id = b.customer_id limit 50;\
++------------+-------------+--------+------------+-----------+\
+| payment_id | customer_id | amount | first_name | last_name |\
++------------+-------------+--------+------------+-----------+\
+|          1 |           1 |   2.99 | MARY       | SMITH     |\
+|          2 |           1 |   0.99 | MARY       | SMITH     |\
+|          3 |           1 |   5.99 | MARY       | SMITH     |\
+|          4 |           1 |   0.99 | MARY       | SMITH     |\
+|          5 |           1 |   9.99 | MARY       | SMITH     |\
+|          6 |           1 |   4.99 | MARY       | SMITH     |\
+|          7 |           1 |   4.99 | MARY       | SMITH     |\
+|          8 |           1 |   0.99 | MARY       | SMITH     |\
+|          9 |           1 |   3.99 | MARY       | SMITH     |\
+|         10 |           1 |   5.99 | MARY       | SMITH     |\
+|         11 |           1 |   5.99 | MARY       | SMITH     |\
+|         12 |           1 |   4.99 | MARY       | SMITH     |\
+|         13 |           1 |   4.99 | MARY       | SMITH     |\
+|         14 |           1 |   7.99 | MARY       | SMITH     |\
+|         15 |           1 |   2.99 | MARY       | SMITH     |\
+|         16 |           1 |   4.99 | MARY       | SMITH     |\
+|         17 |           1 |   4.99 | MARY       | SMITH     |\
+|         18 |           1 |   0.99 | MARY       | SMITH     |\
+|         19 |           1 |   0.99 | MARY       | SMITH     |\
+|         20 |           1 |   2.99 | MARY       | SMITH     |\
+|         21 |           1 |   2.99 | MARY       | SMITH     |\
+|         22 |           1 |   4.99 | MARY       | SMITH     |\
+|         23 |           1 |   3.99 | MARY       | SMITH     |\
+|         24 |           1 |   0.99 | MARY       | SMITH     |\
+|         25 |           1 |   4.99 | MARY       | SMITH     |\
+|         26 |           1 |   0.99 | MARY       | SMITH     |\
+|         27 |           1 |   0.99 | MARY       | SMITH     |\
+|         28 |           1 |   2.99 | MARY       | SMITH     |\
+|         29 |           1 |   0.99 | MARY       | SMITH     |\
+|         30 |           1 |   1.99 | MARY       | SMITH     |\
+|         31 |           1 |   2.99 | MARY       | SMITH     |\
+|         32 |           1 |   5.99 | MARY       | SMITH     |\
+|         33 |           2 |   4.99 | PATRICIA   | JOHNSON   |\
+|         34 |           2 |   2.99 | PATRICIA   | JOHNSON   |\
+|         35 |           2 |   2.99 | PATRICIA   | JOHNSON   |\
+|         36 |           2 |   6.99 | PATRICIA   | JOHNSON   |\
+|         37 |           2 |   4.99 | PATRICIA   | JOHNSON   |\
+|         38 |           2 |   5.99 | PATRICIA   | JOHNSON   |\
+|         39 |           2 |   5.99 | PATRICIA   | JOHNSON   |\
+|         40 |           2 |   5.99 | PATRICIA   | JOHNSON   |\
+|         41 |           2 |   2.99 | PATRICIA   | JOHNSON   |\
+|         42 |           2 |   5.99 | PATRICIA   | JOHNSON   |\
+|         43 |           2 |   4.99 | PATRICIA   | JOHNSON   |\
+|         44 |           2 |  10.99 | PATRICIA   | JOHNSON   |\
+|         45 |           2 |   0.99 | PATRICIA   | JOHNSON   |\
+|         46 |           2 |   6.99 | PATRICIA   | JOHNSON   |\
+|         47 |           2 |   6.99 | PATRICIA   | JOHNSON   |\
+|         48 |           2 |   2.99 | PATRICIA   | JOHNSON   |\
+|         49 |           2 |   0.99 | PATRICIA   | JOHNSON   |\
+|         50 |           2 |   0.99 | PATRICIA   | JOHNSON   |\
++------------+-------------+--------+------------+-----------+\
+50 rows in set (0.0021 sec)\
+ MySQL  localhost  sakila  SQL > show tables;\
++----------------------------+\
+| Tables_in_sakila           |\
++----------------------------+\
+| actor                      |\
+| actor_info                 |\
+| address                    |\
+| category                   |\
+| city                       |\
+| country                    |\
+| customer                   |\
+| customer_list              |\
+| film                       |\
+| film_actor                 |\
+| film_category              |\
+| film_list                  |\
+| film_text                  |\
+| inventory                  |\
+| language                   |\
+| nicer_but_slower_film_list |\
+| payment                    |\
+| rental                     |\
+| sales_by_film_category     |\
+| sales_by_store             |\
+| staff                      |\
+| staff_list                 |\
+| store                      |\
++----------------------------+\
+23 rows in set (0.0021 sec)\
+ MySQL  localhost  sakila  SQL > use world;\
+Default schema set to `world`.\
+Fetching global names, object names from `world` for auto-completion... Press ^C to stop.\
+ MySQL  localhost  world  SQL > desc city;\
++-------------+----------+------+-----+---------+----------------+\
+| Field       | Type     | Null | Key | Default | Extra          |\
++-------------+----------+------+-----+---------+----------------+\
+| ID          | int      | NO   | PRI | NULL    | auto_increment |\
+| Name        | char(35) | NO   |     |         |                |\
+| CountryCode | char(3)  | NO   | MUL |         |                |\
+| District    | char(20) | NO   |     |         |                |\
+| Population  | int      | NO   |     | 0       |                |\
++-------------+----------+------+-----+---------+----------------+\
+5 rows in set (0.0045 sec)\
+ MySQL  localhost  world  SQL > select count(*) from city;\
++----------+\
+| count(*) |\
++----------+\
+|     4079 |\
++----------+\
+1 row in set (0.0192 sec)\
+ MySQL  localhost  world  SQL > select * from city limit 50;\
++----+---------------------+-------------+----------------+------------+\
+| ID | Name                | CountryCode | District       | Population |\
++----+---------------------+-------------+----------------+------------+\
+|  1 | Kabul               | AFG         | Kabol          |    1780000 |\
+|  2 | Qandahar            | AFG         | Qandahar       |     237500 |\
+|  3 | Herat               | AFG         | Herat          |     186800 |\
+|  4 | Mazar-e-Sharif      | AFG         | Balkh          |     127800 |\
+|  5 | Amsterdam           | NLD         | Noord-Holland  |     731200 |\
+|  6 | Rotterdam           | NLD         | Zuid-Holland   |     593321 |\
+|  7 | Haag                | NLD         | Zuid-Holland   |     440900 |\
+|  8 | Utrecht             | NLD         | Utrecht        |     234323 |\
+|  9 | Eindhoven           | NLD         | Noord-Brabant  |     201843 |\
+| 10 | Tilburg             | NLD         | Noord-Brabant  |     193238 |\
+| 11 | Groningen           | NLD         | Groningen      |     172701 |\
+| 12 | Breda               | NLD         | Noord-Brabant  |     160398 |\
+| 13 | Apeldoorn           | NLD         | Gelderland     |     153491 |\
+| 14 | Nijmegen            | NLD         | Gelderland     |     152463 |\
+| 15 | Enschede            | NLD         | Overijssel     |     149544 |\
+| 16 | Haarlem             | NLD         | Noord-Holland  |     148772 |\
+| 17 | Almere              | NLD         | Flevoland      |     142465 |\
+| 18 | Arnhem              | NLD         | Gelderland     |     138020 |\
+| 19 | Zaanstad            | NLD         | Noord-Holland  |     135621 |\
+| 20 | \'b4s-Hertogenbosch    | NLD         | Noord-Brabant  |     129170 |\
+| 21 | Amersfoort          | NLD         | Utrecht        |     126270 |\
+| 22 | Maastricht          | NLD         | Limburg        |     122087 |\
+| 23 | Dordrecht           | NLD         | Zuid-Holland   |     119811 |\
+| 24 | Leiden              | NLD         | Zuid-Holland   |     117196 |\
+| 25 | Haarlemmermeer      | NLD         | Noord-Holland  |     110722 |\
+| 26 | Zoetermeer          | NLD         | Zuid-Holland   |     110214 |\
+| 27 | Emmen               | NLD         | Drenthe        |     105853 |\
+| 28 | Zwolle              | NLD         | Overijssel     |     105819 |\
+| 29 | Ede                 | NLD         | Gelderland     |     101574 |\
+| 30 | Delft               | NLD         | Zuid-Holland   |      95268 |\
+| 31 | Heerlen             | NLD         | Limburg        |      95052 |\
+| 32 | Alkmaar             | NLD         | Noord-Holland  |      92713 |\
+| 33 | Willemstad          | ANT         | Cura\'e7ao        |       2345 |\
+| 34 | Tirana              | ALB         | Tirana         |     270000 |\
+| 35 | Alger               | DZA         | Alger          |    2168000 |\
+| 36 | Oran                | DZA         | Oran           |     609823 |\
+| 37 | Constantine         | DZA         | Constantine    |     443727 |\
+| 38 | Annaba              | DZA         | Annaba         |     222518 |\
+| 39 | Batna               | DZA         | Batna          |     183377 |\
+| 40 | S\'e9tif               | DZA         | S\'e9tif          |     179055 |\
+| 41 | Sidi Bel Abb\'e8s      | DZA         | Sidi Bel Abb\'e8s |     153106 |\
+| 42 | Skikda              | DZA         | Skikda         |     128747 |\
+| 43 | Biskra              | DZA         | Biskra         |     128281 |\
+| 44 | Blida (el-Boulaida) | DZA         | Blida          |     127284 |\
+| 45 | B\'e9ja\'efa              | DZA         | B\'e9ja\'efa         |     117162 |\
+| 46 | Mostaganem          | DZA         | Mostaganem     |     115212 |\
+| 47 | T\'e9bessa             | DZA         | T\'e9bessa        |     112007 |\
+| 48 | Tlemcen (Tilimsen)  | DZA         | Tlemcen        |     110242 |\
+| 49 | B\'e9char              | DZA         | B\'e9char         |     107311 |\
+| 50 | Tiaret              | DZA         | Tiaret         |     100118 |\
++----+---------------------+-------------+----------------+------------+\
+50 rows in set (0.0026 sec)\
+ MySQL  localhost  world  SQL > desc country;\
++----------------+---------------------------------------------------------------------------------------+------+-----+---------+-------+\
+| Field          | Type                                                                                  | Null | Key | Default | Extra |\
++----------------+---------------------------------------------------------------------------------------+------+-----+---------+-------+\
+| Code           | char(3)                                                                               | NO   | PRI |         |       |\
+| Name           | char(52)                                                                              | NO   |     |         |       |\
+| Continent      | enum('Asia','Europe','North America','Africa','Oceania','Antarctica','South America') | NO   |     | Asia    |       |\
+| Region         | char(26)                                                                              | NO   |     |         |       |\
+| SurfaceArea    | decimal(10,2)                                                                         | NO   |     | 0.00    |       |\
+| IndepYear      | smallint                                                                              | YES  |     | NULL    |       |\
+| Population     | int                                                                                   | NO   |     | 0       |       |\
+| LifeExpectancy | decimal(3,1)                                                                          | YES  |     | NULL    |       |\
+| GNP            | decimal(10,2)                                                                         | YES  |     | NULL    |       |\
+| GNPOld         | decimal(10,2)                                                                         | YES  |     | NULL    |       |\
+| LocalName      | char(45)                                                                              | NO   |     |         |       |\
+| GovernmentForm | char(45)                                                                              | NO   |     |         |       |\
+| HeadOfState    | char(60)                                                                              | YES  |     | NULL    |       |\
+| Capital        | int                                                                                   | YES  |     | NULL    |       |\
+| Code2          | char(2)                                                                               | NO   |     |         |       |\
++----------------+---------------------------------------------------------------------------------------+------+-----+---------+-------+\
+15 rows in set (0.0034 sec)\
+ MySQL  localhost  world  SQL > select a.id, a.name, a.population, b.name from city a\
+                             -> inner join country b\
+                             -> on a.countrycode = b.code limit 50;\
++-----+-----------------------+------------+----------------------+\
+| id  | name                  | population | name                 |\
++-----+-----------------------+------------+----------------------+\
+| 129 | Oranjestad            |      29034 | Aruba                |\
+|   1 | Kabul                 |    1780000 | Afghanistan          |\
+|   2 | Qandahar              |     237500 | Afghanistan          |\
+|   3 | Herat                 |     186800 | Afghanistan          |\
+|   4 | Mazar-e-Sharif        |     127800 | Afghanistan          |\
+|  56 | Luanda                |    2022000 | Angola               |\
+|  57 | Huambo                |     163100 | Angola               |\
+|  58 | Lobito                |     130000 | Angola               |\
+|  59 | Benguela              |     128300 | Angola               |\
+|  60 | Namibe                |     118200 | Angola               |\
+|  61 | South Hill            |        961 | Anguilla             |\
+|  62 | The Valley            |        595 | Anguilla             |\
+|  34 | Tirana                |     270000 | Albania              |\
+|  55 | Andorra la Vella      |      21189 | Andorra              |\
+|  33 | Willemstad            |       2345 | Netherlands Antilles |\
+|  64 | Dubai                 |     669181 | United Arab Emirates |\
+|  65 | Abu Dhabi             |     398695 | United Arab Emirates |\
+|  66 | Sharja                |     320095 | United Arab Emirates |\
+|  67 | al-Ayn                |     225970 | United Arab Emirates |\
+|  68 | Ajman                 |     114395 | United Arab Emirates |\
+|  69 | Buenos Aires          |    2982146 | Argentina            |\
+|  70 | La Matanza            |    1266461 | Argentina            |\
+|  71 | C\'f3rdoba               |    1157507 | Argentina            |\
+|  72 | Rosario               |     907718 | Argentina            |\
+|  73 | Lomas de Zamora       |     622013 | Argentina            |\
+|  74 | Quilmes               |     559249 | Argentina            |\
+|  75 | Almirante Brown       |     538918 | Argentina            |\
+|  76 | La Plata              |     521936 | Argentina            |\
+|  77 | Mar del Plata         |     512880 | Argentina            |\
+|  78 | San Miguel de Tucum\'e1n |     470809 | Argentina            |\
+|  79 | Lan\'fas                 |     469735 | Argentina            |\
+|  80 | Merlo                 |     463846 | Argentina            |\
+|  81 | General San Mart\'edn    |     422542 | Argentina            |\
+|  82 | Salta                 |     367550 | Argentina            |\
+|  83 | Moreno                |     356993 | Argentina            |\
+|  84 | Santa F\'e9              |     353063 | Argentina            |\
+|  85 | Avellaneda            |     353046 | Argentina            |\
+|  86 | Tres de Febrero       |     352311 | Argentina            |\
+|  87 | Mor\'f3n                 |     349246 | Argentina            |\
+|  88 | Florencio Varela      |     315432 | Argentina            |\
+|  89 | San Isidro            |     306341 | Argentina            |\
+|  90 | Tigre                 |     296226 | Argentina            |\
+|  91 | Malvinas Argentinas   |     290335 | Argentina            |\
+|  92 | Vicente L\'f3pez         |     288341 | Argentina            |\
+|  93 | Berazategui           |     276916 | Argentina            |\
+|  94 | Corrientes            |     258103 | Argentina            |\
+|  95 | San Miguel            |     248700 | Argentina            |\
+|  96 | Bah\'eda Blanca          |     239810 | Argentina            |\
+|  97 | Esteban Echeverr\'eda    |     235760 | Argentina            |\
+|  98 | Resistencia           |     229212 | Argentina            |\
++-----+-----------------------+------------+----------------------+\
+50 rows in set (0.0085 sec)\
+ MySQL  localhost  world  SQL > desc countrylanguage;\
++-------------+---------------+------+-----+---------+-------+\
+| Field       | Type          | Null | Key | Default | Extra |\
++-------------+---------------+------+-----+---------+-------+\
+| CountryCode | char(3)       | NO   | PRI |         |       |\
+| Language    | char(30)      | NO   | PRI |         |       |\
+| IsOfficial  | enum('T','F') | NO   |     | F       |       |\
+| Percentage  | decimal(4,1)  | NO   |     | 0.0     |       |\
++-------------+---------------+------+-----+---------+-------+\
+4 rows in set (0.0020 sec)\
+ MySQL  localhost  world  SQL > select count(*) countrylanguage;\
++-----------------+\
+| countrylanguage |\
++-----------------+\
+|               1 |\
++-----------------+\
+1 row in set (0.0003 sec)\
+ MySQL  localhost  world  SQL > select count(*) country;\
++---------+\
+| country |\
++---------+\
+|       1 |\
++---------+\
+1 row in set (0.0003 sec)\
+ MySQL  localhost  world  SQL > select count(*) from country;\
++----------+\
+| count(*) |\
++----------+\
+|      239 |\
++----------+\
+1 row in set (0.0051 sec)\
+ MySQL  localhost  world  SQL > select a.name, b.langage\
+                             -> from country a\
+                             -> inner join countrylanguage b\
+                             -> on a.code = b.countrycode;\
+ERROR: 1054 (42S22): Unknown column 'b.langage' in 'field list'\
+ MySQL  localhost  world  SQL > select a.name, b.language from country a inner join countrylanguage b on a.code = b.countrycode;\
++---------------------------------------+---------------------------+\
+| name                                  | language                  |\
++---------------------------------------+---------------------------+\
+| Aruba                                 | Dutch                     |\
+| Aruba                                 | English                   |\
+| Aruba                                 | Papiamento                |\
+| Aruba                                 | Spanish                   |\
+| Afghanistan                           | Balochi                   |\
+| Afghanistan                           | Dari                      |\
+| Afghanistan                           | Pashto                    |\
+| Afghanistan                           | Turkmenian                |\
+| Afghanistan                           | Uzbek                     |\
+| Angola                                | Ambo                      |\
+| Angola                                | Chokwe                    |\
+| Angola                                | Kongo                     |\
+| Angola                                | Luchazi                   |\
+| Angola                                | Luimbe-nganguela          |\
+| Angola                                | Luvale                    |\
+| Angola                                | Mbundu                    |\
+| Angola                                | Nyaneka-nkhumbi           |\
+| Angola                                | Ovimbundu                 |\
+| Anguilla                              | English                   |\
+| Albania                               | Albaniana                 |\
+| Albania                               | Greek                     |\
+| Albania                               | Macedonian                |\
+| Andorra                               | Catalan                   |\
+| Andorra                               | French                    |\
+| Andorra                               | Portuguese                |\
+| Andorra                               | Spanish                   |\
+| Netherlands Antilles                  | Dutch                     |\
+| Netherlands Antilles                  | English                   |\
+| Netherlands Antilles                  | Papiamento                |\
+| United Arab Emirates                  | Arabic                    |\
+| United Arab Emirates                  | Hindi                     |\
+| Argentina                             | Indian Languages          |\
+| Argentina                             | Italian                   |\
+| Argentina                             | Spanish                   |\
+| Armenia                               | Armenian                  |\
+| Armenia                               | Azerbaijani               |\
+| American Samoa                        | English                   |\
+| American Samoa                        | Samoan                    |\
+| American Samoa                        | Tongan                    |\
+| Antigua and Barbuda                   | Creole English            |\
+| Antigua and Barbuda                   | English                   |\
+| Australia                             | Arabic                    |\
+| Australia                             | Canton Chinese            |\
+| Australia                             | English                   |\
+| Australia                             | German                    |\
+| Australia                             | Greek                     |\
+| Australia                             | Italian                   |\
+| Australia                             | Serbo-Croatian            |\
+| Australia                             | Vietnamese                |\
+| Austria                               | Czech                     |\
+| Austria                               | German                    |\
+| Austria                               | Hungarian                 |\
+| Austria                               | Polish                    |\
+| Austria                               | Romanian                  |\
+| Austria                               | Serbo-Croatian            |\
+| Austria                               | Slovene                   |\
+| Austria                               | Turkish                   |\
+| Azerbaijan                            | Armenian                  |\
+| Azerbaijan                            | Azerbaijani               |\
+| Azerbaijan                            | Lezgian                   |\
+| Azerbaijan                            | Russian                   |\
+| Burundi                               | French                    |\
+| Burundi                               | Kirundi                   |\
+| Burundi                               | Swahili                   |\
+| Belgium                               | Arabic                    |\
+| Belgium                               | Dutch                     |\
+| Belgium                               | French                    |\
+| Belgium                               | German                    |\
+| Belgium                               | Italian                   |\
+| Belgium                               | Turkish                   |\
+| Benin                                 | Adja                      |\
+| Benin                                 | Aizo                      |\
+| Benin                                 | Bariba                    |\
+| Benin                                 | Fon                       |\
+| Benin                                 | Ful                       |\
+| Benin                                 | Joruba                    |\
+| Benin                                 | Somba                     |\
+| Burkina Faso                          | Busansi                   |\
+| Burkina Faso                          | Dagara                    |\
+| Burkina Faso                          | Dyula                     |\
+| Burkina Faso                          | Ful                       |\
+| Burkina Faso                          | Gurma                     |\
+| Burkina Faso                          | Mossi                     |\
+| Bangladesh                            | Bengali                   |\
+| Bangladesh                            | Chakma                    |\
+| Bangladesh                            | Garo                      |\
+| Bangladesh                            | Khasi                     |\
+| Bangladesh                            | Marma                     |\
+| Bangladesh                            | Santhali                  |\
+| Bangladesh                            | Tripuri                   |\
+| Bulgaria                              | Bulgariana                |\
+| Bulgaria                              | Macedonian                |\
+| Bulgaria                              | Romani                    |\
+| Bulgaria                              | Turkish                   |\
+| Bahrain                               | Arabic                    |\
+| Bahrain                               | English                   |\
+| Bahamas                               | Creole English            |\
+| Bahamas                               | Creole French             |\
+| Bosnia and Herzegovina                | Serbo-Croatian            |\
+| Belarus                               | Belorussian               |\
+| Belarus                               | Polish                    |\
+| Belarus                               | Russian                   |\
+| Belarus                               | Ukrainian                 |\
+| Belize                                | English                   |\
+| Belize                                | Garifuna                  |\
+| Belize                                | Maya Languages            |\
+| Belize                                | Spanish                   |\
+| Bermuda                               | English                   |\
+| Bolivia                               | Aimar\'e1                    |\
+| Bolivia                               | Guaran\'ed                   |\
+| Bolivia                               | Ket\'9aua                    |\
+| Bolivia                               | Spanish                   |\
+| Brazil                                | German                    |\
+| Brazil                                | Indian Languages          |\
+| Brazil                                | Italian                   |\
+| Brazil                                | Japanese                  |\
+| Brazil                                | Portuguese                |\
+| Barbados                              | Bajan                     |\
+| Barbados                              | English                   |\
+| Brunei                                | Chinese                   |\
+| Brunei                                | English                   |\
+| Brunei                                | Malay                     |\
+| Brunei                                | Malay-English             |\
+| Bhutan                                | Asami                     |\
+| Bhutan                                | Dzongkha                  |\
+| Bhutan                                | Nepali                    |\
+| Botswana                              | Khoekhoe                  |\
+| Botswana                              | Ndebele                   |\
+| Botswana                              | San                       |\
+| Botswana                              | Shona                     |\
+| Botswana                              | Tswana                    |\
+| Central African Republic              | Banda                     |\
+| Central African Republic              | Gbaya                     |\
+| Central African Republic              | Mandjia                   |\
+| Central African Republic              | Mbum                      |\
+| Central African Republic              | Ngbaka                    |\
+| Central African Republic              | Sara                      |\
+| Canada                                | Chinese                   |\
+| Canada                                | Dutch                     |\
+| Canada                                | English                   |\
+| Canada                                | Eskimo Languages          |\
+| Canada                                | French                    |\
+| Canada                                | German                    |\
+| Canada                                | Italian                   |\
+| Canada                                | Polish                    |\
+| Canada                                | Portuguese                |\
+| Canada                                | Punjabi                   |\
+| Canada                                | Spanish                   |\
+| Canada                                | Ukrainian                 |\
+| Cocos (Keeling) Islands               | English                   |\
+| Cocos (Keeling) Islands               | Malay                     |\
+| Switzerland                           | French                    |\
+| Switzerland                           | German                    |\
+| Switzerland                           | Italian                   |\
+| Switzerland                           | Romansh                   |\
+| Chile                                 | Aimar\'e1                    |\
+| Chile                                 | Araucan                   |\
+| Chile                                 | Rapa nui                  |\
+| Chile                                 | Spanish                   |\
+| China                                 | Chinese                   |\
+| China                                 | Dong                      |\
+| China                                 | Hui                       |\
+| China                                 | Mant\'9au                    |\
+| China                                 | Miao                      |\
+| China                                 | Mongolian                 |\
+| China                                 | Puyi                      |\
+| China                                 | Tibetan                   |\
+| China                                 | Tujia                     |\
+| China                                 | Uighur                    |\
+| China                                 | Yi                        |\
+| China                                 | Zhuang                    |\
+| C\'f4te d\'92Ivoire                         | [South]Mande              |\
+| C\'f4te d\'92Ivoire                         | Akan                      |\
+| C\'f4te d\'92Ivoire                         | Gur                       |\
+| C\'f4te d\'92Ivoire                         | Kru                       |\
+| C\'f4te d\'92Ivoire                         | Malinke                   |\
+| Cameroon                              | Bamileke-bamum            |\
+| Cameroon                              | Duala                     |\
+| Cameroon                              | Fang                      |\
+| Cameroon                              | Ful                       |\
+| Cameroon                              | Maka                      |\
+| Cameroon                              | Mandara                   |\
+| Cameroon                              | Masana                    |\
+| Cameroon                              | Tikar                     |\
+| Congo, The Democratic Republic of the | Boa                       |\
+| Congo, The Democratic Republic of the | Chokwe                    |\
+| Congo, The Democratic Republic of the | Kongo                     |\
+| Congo, The Democratic Republic of the | Luba                      |\
+| Congo, The Democratic Republic of the | Mongo                     |\
+| Congo, The Democratic Republic of the | Ngala and Bangi           |\
+| Congo, The Democratic Republic of the | Rundi                     |\
+| Congo, The Democratic Republic of the | Rwanda                    |\
+| Congo, The Democratic Republic of the | Teke                      |\
+| Congo, The Democratic Republic of the | Zande                     |\
+| Congo                                 | Kongo                     |\
+| Congo                                 | Mbete                     |\
+| Congo                                 | Mboshi                    |\
+| Congo                                 | Punu                      |\
+| Congo                                 | Sango                     |\
+| Congo                                 | Teke                      |\
+| Cook Islands                          | English                   |\
+| Cook Islands                          | Maori                     |\
+| Colombia                              | Arawakan                  |\
+| Colombia                              | Caribbean                 |\
+| Colombia                              | Chibcha                   |\
+| Colombia                              | Creole English            |\
+| Colombia                              | Spanish                   |\
+| Comoros                               | Comorian                  |\
+| Comoros                               | Comorian-Arabic           |\
+| Comoros                               | Comorian-French           |\
+| Comoros                               | Comorian-madagassi        |\
+| Comoros                               | Comorian-Swahili          |\
+| Cape Verde                            | Crioulo                   |\
+| Cape Verde                            | Portuguese                |\
+| Costa Rica                            | Chibcha                   |\
+| Costa Rica                            | Chinese                   |\
+| Costa Rica                            | Creole English            |\
+| Costa Rica                            | Spanish                   |\
+| Cuba                                  | Spanish                   |\
+| Christmas Island                      | Chinese                   |\
+| Christmas Island                      | English                   |\
+| Cayman Islands                        | English                   |\
+| Cyprus                                | Greek                     |\
+| Cyprus                                | Turkish                   |\
+| Czech Republic                        | Czech                     |\
+| Czech Republic                        | German                    |\
+| Czech Republic                        | Hungarian                 |\
+| Czech Republic                        | Moravian                  |\
+| Czech Republic                        | Polish                    |\
+| Czech Republic                        | Romani                    |\
+| Czech Republic                        | Silesiana                 |\
+| Czech Republic                        | Slovak                    |\
+| Germany                               | German                    |\
+| Germany                               | Greek                     |\
+| Germany                               | Italian                   |\
+| Germany                               | Polish                    |\
+| Germany                               | Southern Slavic Languages |\
+| Germany                               | Turkish                   |\
+| Djibouti                              | Afar                      |\
+| Djibouti                              | Arabic                    |\
+| Djibouti                              | Somali                    |\
+| Dominica                              | Creole English            |\
+| Dominica                              | Creole French             |\
+| Denmark                               | Arabic                    |\
+| Denmark                               | Danish                    |\
+| Denmark                               | English                   |\
+| Denmark                               | German                    |\
+| Denmark                               | Norwegian                 |\
+| Denmark                               | Swedish                   |\
+| Denmark                               | Turkish                   |\
+| Dominican Republic                    | Creole French             |\
+| Dominican Republic                    | Spanish                   |\
+| Algeria                               | Arabic                    |\
+| Algeria                               | Berberi                   |\
+| Ecuador                               | Ket\'9aua                    |\
+| Ecuador                               | Spanish                   |\
+| Egypt                                 | Arabic                    |\
+| Egypt                                 | Sinaberberi               |\
+| Eritrea                               | Afar                      |\
+| Eritrea                               | Bilin                     |\
+| Eritrea                               | Hadareb                   |\
+| Eritrea                               | Saho                      |\
+| Eritrea                               | Tigre                     |\
+| Eritrea                               | Tigrinja                  |\
+| Western Sahara                        | Arabic                    |\
+| Spain                                 | Basque                    |\
+| Spain                                 | Catalan                   |\
+| Spain                                 | Galecian                  |\
+| Spain                                 | Spanish                   |\
+| Estonia                               | Belorussian               |\
+| Estonia                               | Estonian                  |\
+| Estonia                               | Finnish                   |\
+| Estonia                               | Russian                   |\
+| Estonia                               | Ukrainian                 |\
+| Ethiopia                              | Amhara                    |\
+| Ethiopia                              | Gurage                    |\
+| Ethiopia                              | Oromo                     |\
+| Ethiopia                              | Sidamo                    |\
+| Ethiopia                              | Somali                    |\
+| Ethiopia                              | Tigrinja                  |\
+| Ethiopia                              | Walaita                   |\
+| Finland                               | Estonian                  |\
+| Finland                               | Finnish                   |\
+| Finland                               | Russian                   |\
+| Finland                               | Saame                     |\
+| Finland                               | Swedish                   |\
+| Fiji Islands                          | Fijian                    |\
+| Fiji Islands                          | Hindi                     |\
+| Falkland Islands                      | English                   |\
+| France                                | Arabic                    |\
+| France                                | French                    |\
+| France                                | Italian                   |\
+| France                                | Portuguese                |\
+| France                                | Spanish                   |\
+| France                                | Turkish                   |\
+| Faroe Islands                         | Danish                    |\
+| Faroe Islands                         | Faroese                   |\
+| Micronesia, Federated States of       | Kosrean                   |\
+| Micronesia, Federated States of       | Mortlock                  |\
+| Micronesia, Federated States of       | Pohnpei                   |\
+| Micronesia, Federated States of       | Trukese                   |\
+| Micronesia, Federated States of       | Wolea                     |\
+| Micronesia, Federated States of       | Yap                       |\
+| Gabon                                 | Fang                      |\
+| Gabon                                 | Mbete                     |\
+| Gabon                                 | Mpongwe                   |\
+| Gabon                                 | Punu-sira-nzebi           |\
+| United Kingdom                        | English                   |\
+| United Kingdom                        | Gaeli                     |\
+| United Kingdom                        | Kymri                     |\
+| Georgia                               | Abhyasi                   |\
+| Georgia                               | Armenian                  |\
+| Georgia                               | Azerbaijani               |\
+| Georgia                               | Georgiana                 |\
+| Georgia                               | Osseetti                  |\
+| Georgia                               | Russian                   |\
+| Ghana                                 | Akan                      |\
+| Ghana                                 | Ewe                       |\
+| Ghana                                 | Ga-adangme                |\
+| Ghana                                 | Gurma                     |\
+| Ghana                                 | Joruba                    |\
+| Ghana                                 | Mossi                     |\
+| Gibraltar                             | Arabic                    |\
+| Gibraltar                             | English                   |\
+| Guinea                                | Ful                       |\
+| Guinea                                | Kissi                     |\
+| Guinea                                | Kpelle                    |\
+| Guinea                                | Loma                      |\
+| Guinea                                | Malinke                   |\
+| Guinea                                | Susu                      |\
+| Guinea                                | Yalunka                   |\
+| Guadeloupe                            | Creole French             |\
+| Guadeloupe                            | French                    |\
+| Gambia                                | Diola                     |\
+| Gambia                                | Ful                       |\
+| Gambia                                | Malinke                   |\
+| Gambia                                | Soninke                   |\
+| Gambia                                | Wolof                     |\
+| Guinea-Bissau                         | Balante                   |\
+| Guinea-Bissau                         | Crioulo                   |\
+| Guinea-Bissau                         | Ful                       |\
+| Guinea-Bissau                         | Malinke                   |\
+| Guinea-Bissau                         | Mandyako                  |\
+| Guinea-Bissau                         | Portuguese                |\
+| Equatorial Guinea                     | Bubi                      |\
+| Equatorial Guinea                     | Fang                      |\
+| Greece                                | Greek                     |\
+| Greece                                | Turkish                   |\
+| Grenada                               | Creole English            |\
+| Greenland                             | Danish                    |\
+| Greenland                             | Greenlandic               |\
+| Guatemala                             | Cakchiquel                |\
+| Guatemala                             | Kekch\'ed                    |\
+| Guatemala                             | Mam                       |\
+| Guatemala                             | Quich\'e9                    |\
+| Guatemala                             | Spanish                   |\
+| French Guiana                         | Creole French             |\
+| French Guiana                         | Indian Languages          |\
+| Guam                                  | Chamorro                  |\
+| Guam                                  | English                   |\
+| Guam                                  | Japanese                  |\
+| Guam                                  | Korean                    |\
+| Guam                                  | Philippene Languages      |\
+| Guyana                                | Arawakan                  |\
+| Guyana                                | Caribbean                 |\
+| Guyana                                | Creole English            |\
+| Hong Kong                             | Canton Chinese            |\
+| Hong Kong                             | Chiu chau                 |\
+| Hong Kong                             | English                   |\
+| Hong Kong                             | Fukien                    |\
+| Hong Kong                             | Hakka                     |\
+| Honduras                              | Creole English            |\
+| Honduras                              | Garifuna                  |\
+| Honduras                              | Miskito                   |\
+| Honduras                              | Spanish                   |\
+| Croatia                               | Serbo-Croatian            |\
+| Croatia                               | Slovene                   |\
+| Haiti                                 | French                    |\
+| Haiti                                 | Haiti Creole              |\
+| Hungary                               | German                    |\
+| Hungary                               | Hungarian                 |\
+| Hungary                               | Romani                    |\
+| Hungary                               | Romanian                  |\
+| Hungary                               | Serbo-Croatian            |\
+| Hungary                               | Slovak                    |\
+| Indonesia                             | Bali                      |\
+| Indonesia                             | Banja                     |\
+| Indonesia                             | Batakki                   |\
+| Indonesia                             | Bugi                      |\
+| Indonesia                             | Javanese                  |\
+| Indonesia                             | Madura                    |\
+| Indonesia                             | Malay                     |\
+| Indonesia                             | Minangkabau               |\
+| Indonesia                             | Sunda                     |\
+| India                                 | Asami                     |\
+| India                                 | Bengali                   |\
+| India                                 | Gujarati                  |\
+| India                                 | Hindi                     |\
+| India                                 | Kannada                   |\
+| India                                 | Malajalam                 |\
+| India                                 | Marathi                   |\
+| India                                 | Orija                     |\
+| India                                 | Punjabi                   |\
+| India                                 | Tamil                     |\
+| India                                 | Telugu                    |\
+| India                                 | Urdu                      |\
+| Ireland                               | English                   |\
+| Ireland                               | Irish                     |\
+| Iran                                  | Arabic                    |\
+| Iran                                  | Azerbaijani               |\
+| Iran                                  | Bakhtyari                 |\
+| Iran                                  | Balochi                   |\
+| Iran                                  | Gilaki                    |\
+| Iran                                  | Kurdish                   |\
+| Iran                                  | Luri                      |\
+| Iran                                  | Mazandarani               |\
+| Iran                                  | Persian                   |\
+| Iran                                  | Turkmenian                |\
+| Iraq                                  | Arabic                    |\
+| Iraq                                  | Assyrian                  |\
+| Iraq                                  | Azerbaijani               |\
+| Iraq                                  | Kurdish                   |\
+| Iraq                                  | Persian                   |\
+| Iceland                               | English                   |\
+| Iceland                               | Icelandic                 |\
+| Israel                                | Arabic                    |\
+| Israel                                | Hebrew                    |\
+| Israel                                | Russian                   |\
+| Italy                                 | Albaniana                 |\
+| Italy                                 | French                    |\
+| Italy                                 | Friuli                    |\
+| Italy                                 | German                    |\
+| Italy                                 | Italian                   |\
+| Italy                                 | Romani                    |\
+| Italy                                 | Sardinian                 |\
+| Italy                                 | Slovene                   |\
+| Jamaica                               | Creole English            |\
+| Jamaica                               | Hindi                     |\
+| Jordan                                | Arabic                    |\
+| Jordan                                | Armenian                  |\
+| Jordan                                | Circassian                |\
+| Japan                                 | Ainu                      |\
+| Japan                                 | Chinese                   |\
+| Japan                                 | English                   |\
+| Japan                                 | Japanese                  |\
+| Japan                                 | Korean                    |\
+| Japan                                 | Philippene Languages      |\
+| Kazakstan                             | German                    |\
+| Kazakstan                             | Kazakh                    |\
+| Kazakstan                             | Russian                   |\
+| Kazakstan                             | Tatar                     |\
+| Kazakstan                             | Ukrainian                 |\
+| Kazakstan                             | Uzbek                     |\
+| Kenya                                 | Gusii                     |\
+| Kenya                                 | Kalenjin                  |\
+| Kenya                                 | Kamba                     |\
+| Kenya                                 | Kikuyu                    |\
+| Kenya                                 | Luhya                     |\
+| Kenya                                 | Luo                       |\
+| Kenya                                 | Masai                     |\
+| Kenya                                 | Meru                      |\
+| Kenya                                 | Nyika                     |\
+| Kenya                                 | Turkana                   |\
+| Kyrgyzstan                            | Kazakh                    |\
+| Kyrgyzstan                            | Kirgiz                    |\
+| Kyrgyzstan                            | Russian                   |\
+| Kyrgyzstan                            | Tadzhik                   |\
+| Kyrgyzstan                            | Tatar                     |\
+| Kyrgyzstan                            | Ukrainian                 |\
+| Kyrgyzstan                            | Uzbek                     |\
+| Cambodia                              | Chinese                   |\
+| Cambodia                              | Khmer                     |\
+| Cambodia                              | T\'9aam                      |\
+| Cambodia                              | Vietnamese                |\
+| Kiribati                              | Kiribati                  |\
+| Kiribati                              | Tuvalu                    |\
+| Saint Kitts and Nevis                 | Creole English            |\
+| Saint Kitts and Nevis                 | English                   |\
+| South Korea                           | Chinese                   |\
+| South Korea                           | Korean                    |\
+| Kuwait                                | Arabic                    |\
+| Kuwait                                | English                   |\
+| Laos                                  | Lao                       |\
+| Laos                                  | Lao-Soung                 |\
+| Laos                                  | Mon-khmer                 |\
+| Laos                                  | Thai                      |\
+| Lebanon                               | Arabic                    |\
+| Lebanon                               | Armenian                  |\
+| Lebanon                               | French                    |\
+| Liberia                               | Bassa                     |\
+| Liberia                               | Gio                       |\
+| Liberia                               | Grebo                     |\
+| Liberia                               | Kpelle                    |\
+| Liberia                               | Kru                       |\
+| Liberia                               | Loma                      |\
+| Liberia                               | Malinke                   |\
+| Liberia                               | Mano                      |\
+| Libyan Arab Jamahiriya                | Arabic                    |\
+| Libyan Arab Jamahiriya                | Berberi                   |\
+| Saint Lucia                           | Creole French             |\
+| Saint Lucia                           | English                   |\
+| Liechtenstein                         | German                    |\
+| Liechtenstein                         | Italian                   |\
+| Liechtenstein                         | Turkish                   |\
+| Sri Lanka                             | Mixed Languages           |\
+| Sri Lanka                             | Singali                   |\
+| Sri Lanka                             | Tamil                     |\
+| Lesotho                               | English                   |\
+| Lesotho                               | Sotho                     |\
+| Lesotho                               | Zulu                      |\
+| Lithuania                             | Belorussian               |\
+| Lithuania                             | Lithuanian                |\
+| Lithuania                             | Polish                    |\
+| Lithuania                             | Russian                   |\
+| Lithuania                             | Ukrainian                 |\
+| Luxembourg                            | French                    |\
+| Luxembourg                            | German                    |\
+| Luxembourg                            | Italian                   |\
+| Luxembourg                            | Luxembourgish             |\
+| Luxembourg                            | Portuguese                |\
+| Latvia                                | Belorussian               |\
+| Latvia                                | Latvian                   |\
+| Latvia                                | Lithuanian                |\
+| Latvia                                | Polish                    |\
+| Latvia                                | Russian                   |\
+| Latvia                                | Ukrainian                 |\
+| Macao                                 | Canton Chinese            |\
+| Macao                                 | English                   |\
+| Macao                                 | Mandarin Chinese          |\
+| Macao                                 | Portuguese                |\
+| Morocco                               | Arabic                    |\
+| Morocco                               | Berberi                   |\
+| Monaco                                | English                   |\
+| Monaco                                | French                    |\
+| Monaco                                | Italian                   |\
+| Monaco                                | Monegasque                |\
+| Moldova                               | Bulgariana                |\
+| Moldova                               | Gagauzi                   |\
+| Moldova                               | Romanian                  |\
+| Moldova                               | Russian                   |\
+| Moldova                               | Ukrainian                 |\
+| Madagascar                            | French                    |\
+| Madagascar                            | Malagasy                  |\
+| Maldives                              | Dhivehi                   |\
+| Maldives                              | English                   |\
+| Mexico                                | Mixtec                    |\
+| Mexico                                | N\'e1huatl                   |\
+| Mexico                                | Otom\'ed                     |\
+| Mexico                                | Spanish                   |\
+| Mexico                                | Yucatec                   |\
+| Mexico                                | Zapotec                   |\
+| Marshall Islands                      | English                   |\
+| Marshall Islands                      | Marshallese               |\
+| Macedonia                             | Albaniana                 |\
+| Macedonia                             | Macedonian                |\
+| Macedonia                             | Romani                    |\
+| Macedonia                             | Serbo-Croatian            |\
+| Macedonia                             | Turkish                   |\
+| Mali                                  | Bambara                   |\
+| Mali                                  | Ful                       |\
+| Mali                                  | Senufo and Minianka       |\
+| Mali                                  | Songhai                   |\
+| Mali                                  | Soninke                   |\
+| Mali                                  | Tamashek                  |\
+| Malta                                 | English                   |\
+| Malta                                 | Maltese                   |\
+| Myanmar                               | Burmese                   |\
+| Myanmar                               | Chin                      |\
+| Myanmar                               | Kachin                    |\
+| Myanmar                               | Karen                     |\
+| Myanmar                               | Kayah                     |\
+| Myanmar                               | Mon                       |\
+| Myanmar                               | Rakhine                   |\
+| Myanmar                               | Shan                      |\
+| Mongolia                              | Bajad                     |\
+| Mongolia                              | Buryat                    |\
+| Mongolia                              | Dariganga                 |\
+| Mongolia                              | Dorbet                    |\
+| Mongolia                              | Kazakh                    |\
+| Mongolia                              | Mongolian                 |\
+| Northern Mariana Islands              | Carolinian                |\
+| Northern Mariana Islands              | Chamorro                  |\
+| Northern Mariana Islands              | Chinese                   |\
+| Northern Mariana Islands              | English                   |\
+| Northern Mariana Islands              | Korean                    |\
+| Northern Mariana Islands              | Philippene Languages      |\
+| Mozambique                            | Chuabo                    |\
+| Mozambique                            | Lomwe                     |\
+| Mozambique                            | Makua                     |\
+| Mozambique                            | Marendje                  |\
+| Mozambique                            | Nyanja                    |\
+| Mozambique                            | Ronga                     |\
+| Mozambique                            | Sena                      |\
+| Mozambique                            | Shona                     |\
+| Mozambique                            | Tsonga                    |\
+| Mozambique                            | Tswa                      |\
+| Mauritania                            | Ful                       |\
+| Mauritania                            | Hassaniya                 |\
+| Mauritania                            | Soninke                   |\
+| Mauritania                            | Tukulor                   |\
+| Mauritania                            | Wolof                     |\
+| Mauritania                            | Zenaga                    |\
+| Montserrat                            | English                   |\
+| Martinique                            | Creole French             |\
+| Martinique                            | French                    |\
+| Mauritius                             | Bhojpuri                  |\
+| Mauritius                             | Creole French             |\
+| Mauritius                             | French                    |\
+| Mauritius                             | Hindi                     |\
+| Mauritius                             | Marathi                   |\
+| Mauritius                             | Tamil                     |\
+| Malawi                                | Chichewa                  |\
+| Malawi                                | Lomwe                     |\
+| Malawi                                | Ngoni                     |\
+| Malawi                                | Yao                       |\
+| Malaysia                              | Chinese                   |\
+| Malaysia                              | Dusun                     |\
+| Malaysia                              | English                   |\
+| Malaysia                              | Iban                      |\
+| Malaysia                              | Malay                     |\
+| Malaysia                              | Tamil                     |\
+| Mayotte                               | French                    |\
+| Mayotte                               | Mahor\'e9                    |\
+| Mayotte                               | Malagasy                  |\
+| Namibia                               | Afrikaans                 |\
+| Namibia                               | Caprivi                   |\
+| Namibia                               | German                    |\
+| Namibia                               | Herero                    |\
+| Namibia                               | Kavango                   |\
+| Namibia                               | Nama                      |\
+| Namibia                               | Ovambo                    |\
+| Namibia                               | San                       |\
+| New Caledonia                         | French                    |\
+| New Caledonia                         | Malenasian Languages      |\
+| New Caledonia                         | Polynesian Languages      |\
+| Niger                                 | Ful                       |\
+| Niger                                 | Hausa                     |\
+| Niger                                 | Kanuri                    |\
+| Niger                                 | Songhai-zerma             |\
+| Niger                                 | Tamashek                  |\
+| Norfolk Island                        | English                   |\
+| Nigeria                               | Bura                      |\
+| Nigeria                               | Edo                       |\
+| Nigeria                               | Ful                       |\
+| Nigeria                               | Hausa                     |\
+| Nigeria                               | Ibibio                    |\
+| Nigeria                               | Ibo                       |\
+| Nigeria                               | Ijo                       |\
+| Nigeria                               | Joruba                    |\
+| Nigeria                               | Kanuri                    |\
+| Nigeria                               | Tiv                       |\
+| Nicaragua                             | Creole English            |\
+| Nicaragua                             | Miskito                   |\
+| Nicaragua                             | Spanish                   |\
+| Nicaragua                             | Sumo                      |\
+| Niue                                  | English                   |\
+| Niue                                  | Niue                      |\
+| Netherlands                           | Arabic                    |\
+| Netherlands                           | Dutch                     |\
+| Netherlands                           | Fries                     |\
+| Netherlands                           | Turkish                   |\
+| Norway                                | Danish                    |\
+| Norway                                | English                   |\
+| Norway                                | Norwegian                 |\
+| Norway                                | Saame                     |\
+| Norway                                | Swedish                   |\
+| Nepal                                 | Bhojpuri                  |\
+| Nepal                                 | Hindi                     |\
+| Nepal                                 | Maithili                  |\
+| Nepal                                 | Nepali                    |\
+| Nepal                                 | Newari                    |\
+| Nepal                                 | Tamang                    |\
+| Nepal                                 | Tharu                     |\
+| Nauru                                 | Chinese                   |\
+| Nauru                                 | English                   |\
+| Nauru                                 | Kiribati                  |\
+| Nauru                                 | Nauru                     |\
+| Nauru                                 | Tuvalu                    |\
+| New Zealand                           | English                   |\
+| New Zealand                           | Maori                     |\
+| Oman                                  | Arabic                    |\
+| Oman                                  | Balochi                   |\
+| Pakistan                              | Balochi                   |\
+| Pakistan                              | Brahui                    |\
+| Pakistan                              | Hindko                    |\
+| Pakistan                              | Pashto                    |\
+| Pakistan                              | Punjabi                   |\
+| Pakistan                              | Saraiki                   |\
+| Pakistan                              | Sindhi                    |\
+| Pakistan                              | Urdu                      |\
+| Panama                                | Arabic                    |\
+| Panama                                | Creole English            |\
+| Panama                                | Cuna                      |\
+| Panama                                | Embera                    |\
+| Panama                                | Guaym\'ed                    |\
+| Panama                                | Spanish                   |\
+| Pitcairn                              | Pitcairnese               |\
+| Peru                                  | Aimar\'e1                    |\
+| Peru                                  | Ket\'9aua                    |\
+| Peru                                  | Spanish                   |\
+| Philippines                           | Bicol                     |\
+| Philippines                           | Cebuano                   |\
+| Philippines                           | Hiligaynon                |\
+| Philippines                           | Ilocano                   |\
+| Philippines                           | Maguindanao               |\
+| Philippines                           | Maranao                   |\
+| Philippines                           | Pampango                  |\
+| Philippines                           | Pangasinan                |\
+| Philippines                           | Pilipino                  |\
+| Philippines                           | Waray-waray               |\
+| Palau                                 | Chinese                   |\
+| Palau                                 | English                   |\
+| Palau                                 | Palau                     |\
+| Palau                                 | Philippene Languages      |\
+| Papua New Guinea                      | Malenasian Languages      |\
+| Papua New Guinea                      | Papuan Languages          |\
+| Poland                                | Belorussian               |\
+| Poland                                | German                    |\
+| Poland                                | Polish                    |\
+| Poland                                | Ukrainian                 |\
+| Puerto Rico                           | English                   |\
+| Puerto Rico                           | Spanish                   |\
+| North Korea                           | Chinese                   |\
+| North Korea                           | Korean                    |\
+| Portugal                              | Portuguese                |\
+| Paraguay                              | German                    |\
+| Paraguay                              | Guaran\'ed                   |\
+| Paraguay                              | Portuguese                |\
+| Paraguay                              | Spanish                   |\
+| Palestine                             | Arabic                    |\
+| Palestine                             | Hebrew                    |\
+| French Polynesia                      | Chinese                   |\
+| French Polynesia                      | French                    |\
+| French Polynesia                      | Tahitian                  |\
+| Qatar                                 | Arabic                    |\
+| Qatar                                 | Urdu                      |\
+| R\'e9union                               | Chinese                   |\
+| R\'e9union                               | Comorian                  |\
+| R\'e9union                               | Creole French             |\
+| R\'e9union                               | Malagasy                  |\
+| R\'e9union                               | Tamil                     |\
+| Romania                               | German                    |\
+| Romania                               | Hungarian                 |\
+| Romania                               | Romani                    |\
+| Romania                               | Romanian                  |\
+| Romania                               | Serbo-Croatian            |\
+| Romania                               | Ukrainian                 |\
+| Russian Federation                    | Avarian                   |\
+| Russian Federation                    | Bashkir                   |\
+| Russian Federation                    | Belorussian               |\
+| Russian Federation                    | Chechen                   |\
+| Russian Federation                    | Chuvash                   |\
+| Russian Federation                    | Kazakh                    |\
+| Russian Federation                    | Mari                      |\
+| Russian Federation                    | Mordva                    |\
+| Russian Federation                    | Russian                   |\
+| Russian Federation                    | Tatar                     |\
+| Russian Federation                    | Udmur                     |\
+| Russian Federation                    | Ukrainian                 |\
+| Rwanda                                | French                    |\
+| Rwanda                                | Rwanda                    |\
+| Saudi Arabia                          | Arabic                    |\
+| Sudan                                 | Arabic                    |\
+| Sudan                                 | Bari                      |\
+| Sudan                                 | Beja                      |\
+| Sudan                                 | Chilluk                   |\
+| Sudan                                 | Dinka                     |\
+| Sudan                                 | Fur                       |\
+| Sudan                                 | Lotuko                    |\
+| Sudan                                 | Nubian Languages          |\
+| Sudan                                 | Nuer                      |\
+| Sudan                                 | Zande                     |\
+| Senegal                               | Diola                     |\
+| Senegal                               | Ful                       |\
+| Senegal                               | Malinke                   |\
+| Senegal                               | Serer                     |\
+| Senegal                               | Soninke                   |\
+| Senegal                               | Wolof                     |\
+| Singapore                             | Chinese                   |\
+| Singapore                             | Malay                     |\
+| Singapore                             | Tamil                     |\
+| Saint Helena                          | English                   |\
+| Svalbard and Jan Mayen                | Norwegian                 |\
+| Svalbard and Jan Mayen                | Russian                   |\
+| Solomon Islands                       | Malenasian Languages      |\
+| Solomon Islands                       | Papuan Languages          |\
+| Solomon Islands                       | Polynesian Languages      |\
+| Sierra Leone                          | Bullom-sherbro            |\
+| Sierra Leone                          | Ful                       |\
+| Sierra Leone                          | Kono-vai                  |\
+| Sierra Leone                          | Kuranko                   |\
+| Sierra Leone                          | Limba                     |\
+| Sierra Leone                          | Mende                     |\
+| Sierra Leone                          | Temne                     |\
+| Sierra Leone                          | Yalunka                   |\
+| El Salvador                           | Nahua                     |\
+| El Salvador                           | Spanish                   |\
+| San Marino                            | Italian                   |\
+| Somalia                               | Arabic                    |\
+| Somalia                               | Somali                    |\
+| Saint Pierre and Miquelon             | French                    |\
+| Sao Tome and Principe                 | Crioulo                   |\
+| Sao Tome and Principe                 | French                    |\
+| Suriname                              | Hindi                     |\
+| Suriname                              | Sranantonga               |\
+| Slovakia                              | Czech and Moravian        |\
+| Slovakia                              | Hungarian                 |\
+| Slovakia                              | Romani                    |\
+| Slovakia                              | Slovak                    |\
+| Slovakia                              | Ukrainian and Russian     |\
+| Slovenia                              | Hungarian                 |\
+| Slovenia                              | Serbo-Croatian            |\
+| Slovenia                              | Slovene                   |\
+| Sweden                                | Arabic                    |\
+| Sweden                                | Finnish                   |\
+| Sweden                                | Norwegian                 |\
+| Sweden                                | Southern Slavic Languages |\
+| Sweden                                | Spanish                   |\
+| Sweden                                | Swedish                   |\
+| Swaziland                             | Swazi                     |\
+| Swaziland                             | Zulu                      |\
+| Seychelles                            | English                   |\
+| Seychelles                            | French                    |\
+| Seychelles                            | Seselwa                   |\
+| Syria                                 | Arabic                    |\
+| Syria                                 | Kurdish                   |\
+| Turks and Caicos Islands              | English                   |\
+| Chad                                  | Arabic                    |\
+| Chad                                  | Gorane                    |\
+| Chad                                  | Hadjarai                  |\
+| Chad                                  | Kanem-bornu               |\
+| Chad                                  | Mayo-kebbi                |\
+| Chad                                  | Ouaddai                   |\
+| Chad                                  | Sara                      |\
+| Chad                                  | Tandjile                  |\
+| Togo                                  | Ane                       |\
+| Togo                                  | Ewe                       |\
+| Togo                                  | Gurma                     |\
+| Togo                                  | Kaby\'e9                     |\
+| Togo                                  | Kotokoli                  |\
+| Togo                                  | Moba                      |\
+| Togo                                  | Naudemba                  |\
+| Togo                                  | Watyi                     |\
+| Thailand                              | Chinese                   |\
+| Thailand                              | Khmer                     |\
+| Thailand                              | Kuy                       |\
+| Thailand                              | Lao                       |\
+| Thailand                              | Malay                     |\
+| Thailand                              | Thai                      |\
+| Tajikistan                            | Russian                   |\
+| Tajikistan                            | Tadzhik                   |\
+| Tajikistan                            | Uzbek                     |\
+| Tokelau                               | English                   |\
+| Tokelau                               | Tokelau                   |\
+| Turkmenistan                          | Kazakh                    |\
+| Turkmenistan                          | Russian                   |\
+| Turkmenistan                          | Turkmenian                |\
+| Turkmenistan                          | Uzbek                     |\
+| East Timor                            | Portuguese                |\
+| East Timor                            | Sunda                     |\
+| Tonga                                 | English                   |\
+| Tonga                                 | Tongan                    |\
+| Trinidad and Tobago                   | Creole English            |\
+| Trinidad and Tobago                   | English                   |\
+| Trinidad and Tobago                   | Hindi                     |\
+| Tunisia                               | Arabic                    |\
+| Tunisia                               | Arabic-French             |\
+| Tunisia                               | Arabic-French-English     |\
+| Turkey                                | Arabic                    |\
+| Turkey                                | Kurdish                   |\
+| Turkey                                | Turkish                   |\
+| Tuvalu                                | English                   |\
+| Tuvalu                                | Kiribati                  |\
+| Tuvalu                                | Tuvalu                    |\
+| Taiwan                                | Ami                       |\
+| Taiwan                                | Atayal                    |\
+| Taiwan                                | Hakka                     |\
+| Taiwan                                | Mandarin Chinese          |\
+| Taiwan                                | Min                       |\
+| Taiwan                                | Paiwan                    |\
+| Tanzania                              | Chaga and Pare            |\
+| Tanzania                              | Gogo                      |\
+| Tanzania                              | Ha                        |\
+| Tanzania                              | Haya                      |\
+| Tanzania                              | Hehet                     |\
+| Tanzania                              | Luguru                    |\
+| Tanzania                              | Makonde                   |\
+| Tanzania                              | Nyakusa                   |\
+| Tanzania                              | Nyamwesi                  |\
+| Tanzania                              | Shambala                  |\
+| Tanzania                              | Swahili                   |\
+| Uganda                                | Acholi                    |\
+| Uganda                                | Ganda                     |\
+| Uganda                                | Gisu                      |\
+| Uganda                                | Kiga                      |\
+| Uganda                                | Lango                     |\
+| Uganda                                | Lugbara                   |\
+| Uganda                                | Nkole                     |\
+| Uganda                                | Rwanda                    |\
+| Uganda                                | Soga                      |\
+| Uganda                                | Teso                      |\
+| Ukraine                               | Belorussian               |\
+| Ukraine                               | Bulgariana                |\
+| Ukraine                               | Hungarian                 |\
+| Ukraine                               | Polish                    |\
+| Ukraine                               | Romanian                  |\
+| Ukraine                               | Russian                   |\
+| Ukraine                               | Ukrainian                 |\
+| United States Minor Outlying Islands  | English                   |\
+| Uruguay                               | Spanish                   |\
+| United States                         | Chinese                   |\
+| United States                         | English                   |\
+| United States                         | French                    |\
+| United States                         | German                    |\
+| United States                         | Italian                   |\
+| United States                         | Japanese                  |\
+| United States                         | Korean                    |\
+| United States                         | Polish                    |\
+| United States                         | Portuguese                |\
+| United States                         | Spanish                   |\
+| United States                         | Tagalog                   |\
+| United States                         | Vietnamese                |\
+| Uzbekistan                            | Karakalpak                |\
+| Uzbekistan                            | Kazakh                    |\
+| Uzbekistan                            | Russian                   |\
+| Uzbekistan                            | Tadzhik                   |\
+| Uzbekistan                            | Tatar                     |\
+| Uzbekistan                            | Uzbek                     |\
+| Holy See (Vatican City State)         | Italian                   |\
+| Saint Vincent and the Grenadines      | Creole English            |\
+| Saint Vincent and the Grenadines      | English                   |\
+| Venezuela                             | Goajiro                   |\
+| Venezuela                             | Spanish                   |\
+| Venezuela                             | Warrau                    |\
+| Virgin Islands, British               | English                   |\
+| Virgin Islands, U.S.                  | English                   |\
+| Virgin Islands, U.S.                  | French                    |\
+| Virgin Islands, U.S.                  | Spanish                   |\
+| Vietnam                               | Chinese                   |\
+| Vietnam                               | Khmer                     |\
+| Vietnam                               | Man                       |\
+| Vietnam                               | Miao                      |\
+| Vietnam                               | Muong                     |\
+| Vietnam                               | Nung                      |\
+| Vietnam                               | Thai                      |\
+| Vietnam                               | Tho                       |\
+| Vietnam                               | Vietnamese                |\
+| Vanuatu                               | Bislama                   |\
+| Vanuatu                               | English                   |\
+| Vanuatu                               | French                    |\
+| Wallis and Futuna                     | Futuna                    |\
+| Wallis and Futuna                     | Wallis                    |\
+| Samoa                                 | English                   |\
+| Samoa                                 | Samoan                    |\
+| Samoa                                 | Samoan-English            |\
+| Yemen                                 | Arabic                    |\
+| Yemen                                 | Soqutri                   |\
+| Yugoslavia                            | Albaniana                 |\
+| Yugoslavia                            | Hungarian                 |\
+| Yugoslavia                            | Macedonian                |\
+| Yugoslavia                            | Romani                    |\
+| Yugoslavia                            | Serbo-Croatian            |\
+| Yugoslavia                            | Slovak                    |\
+| South Africa                          | Afrikaans                 |\
+| South Africa                          | English                   |\
+| South Africa                          | Ndebele                   |\
+| South Africa                          | Northsotho                |\
+| South Africa                          | Southsotho                |\
+| South Africa                          | Swazi                     |\
+| South Africa                          | Tsonga                    |\
+| South Africa                          | Tswana                    |\
+| South Africa                          | Venda                     |\
+| South Africa                          | Xhosa                     |\
+| South Africa                          | Zulu                      |\
+| Zambia                                | Bemba                     |\
+| Zambia                                | Chewa                     |\
+| Zambia                                | Lozi                      |\
+| Zambia                                | Nsenga                    |\
+| Zambia                                | Nyanja                    |\
+| Zambia                                | Tonga                     |\
+| Zimbabwe                              | English                   |\
+| Zimbabwe                              | Ndebele                   |\
+| Zimbabwe                              | Nyanja                    |\
+| Zimbabwe                              | Shona                     |\
++---------------------------------------+---------------------------+\
+984 rows in set (0.0101 sec)\
+ MySQL  localhost  world  SQL > desc countrylanguage;\
++-------------+---------------+------+-----+---------+-------+\
+| Field       | Type          | Null | Key | Default | Extra |\
++-------------+---------------+------+-----+---------+-------+\
+| CountryCode | char(3)       | NO   | PRI |         |       |\
+| Language    | char(30)      | NO   | PRI |         |       |\
+| IsOfficial  | enum('T','F') | NO   |     | F       |       |\
+| Percentage  | decimal(4,1)  | NO   |     | 0.0     |       |\
++-------------+---------------+------+-----+---------+-------+\
+4 rows in set (0.0020 sec)\
+ MySQL  localhost  world  SQL > select a.name, b.language from city a inner join countrylanguage b on a.code = b.countrycode limit 50;\
+ERROR: 1054 (42S22): Unknown column 'a.code' in 'on clause'\
+ MySQL  localhost  world  SQL > select a.name, b.name, c.language  from city a inner join country b on b.code = a.countrycode\
+                             -> inner join countrylanguage c on c.countrycode = a.countrycode limit 50;\
++----------------+-------------+------------+\
+| name           | name        | language   |\
++----------------+-------------+------------+\
+| Kabul          | Afghanistan | Balochi    |\
+| Kabul          | Afghanistan | Dari       |\
+| Kabul          | Afghanistan | Pashto     |\
+| Kabul          | Afghanistan | Turkmenian |\
+| Kabul          | Afghanistan | Uzbek      |\
+| Qandahar       | Afghanistan | Balochi    |\
+| Qandahar       | Afghanistan | Dari       |\
+| Qandahar       | Afghanistan | Pashto     |\
+| Qandahar       | Afghanistan | Turkmenian |\
+| Qandahar       | Afghanistan | Uzbek      |\
+| Herat          | Afghanistan | Balochi    |\
+| Herat          | Afghanistan | Dari       |\
+| Herat          | Afghanistan | Pashto     |\
+| Herat          | Afghanistan | Turkmenian |\
+| Herat          | Afghanistan | Uzbek      |\
+| Mazar-e-Sharif | Afghanistan | Balochi    |\
+| Mazar-e-Sharif | Afghanistan | Dari       |\
+| Mazar-e-Sharif | Afghanistan | Pashto     |\
+| Mazar-e-Sharif | Afghanistan | Turkmenian |\
+| Mazar-e-Sharif | Afghanistan | Uzbek      |\
+| Amsterdam      | Netherlands | Arabic     |\
+| Amsterdam      | Netherlands | Dutch      |\
+| Amsterdam      | Netherlands | Fries      |\
+| Amsterdam      | Netherlands | Turkish    |\
+| Rotterdam      | Netherlands | Arabic     |\
+| Rotterdam      | Netherlands | Dutch      |\
+| Rotterdam      | Netherlands | Fries      |\
+| Rotterdam      | Netherlands | Turkish    |\
+| Haag           | Netherlands | Arabic     |\
+| Haag           | Netherlands | Dutch      |\
+| Haag           | Netherlands | Fries      |\
+| Haag           | Netherlands | Turkish    |\
+| Utrecht        | Netherlands | Arabic     |\
+| Utrecht        | Netherlands | Dutch      |\
+| Utrecht        | Netherlands | Fries      |\
+| Utrecht        | Netherlands | Turkish    |\
+| Eindhoven      | Netherlands | Arabic     |\
+| Eindhoven      | Netherlands | Dutch      |\
+| Eindhoven      | Netherlands | Fries      |\
+| Eindhoven      | Netherlands | Turkish    |\
+| Tilburg        | Netherlands | Arabic     |\
+| Tilburg        | Netherlands | Dutch      |\
+| Tilburg        | Netherlands | Fries      |\
+| Tilburg        | Netherlands | Turkish    |\
+| Groningen      | Netherlands | Arabic     |\
+| Groningen      | Netherlands | Dutch      |\
+| Groningen      | Netherlands | Fries      |\
+| Groningen      | Netherlands | Turkish    |\
+| Breda          | Netherlands | Arabic     |\
+| Breda          | Netherlands | Dutch      |\
++----------------+-------------+------------+\
+50 rows in set (0.0009 sec)\
+ MySQL  localhost  world  SQL > select a.name, b.name, c.language  from city a inner join country b on b.code = a.countrycode inner join countrylanguage c on c.countrycode = a.countrycode where b.name "M%" limit 50;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"M%" limit 50' at line 1\
+ MySQL  localhost  world  SQL > select a.name, b.name, c.language  from city a inner join country b on b.code = a.countrycode inner join countrylanguage c on c.countrycode = a.countrycode where b.name like "M%" limit 50;\
++-------------+---------------------------------+------------------+\
+| name        | name                            | language         |\
++-------------+---------------------------------+------------------+\
+| Weno        | Micronesia, Federated States of | Kosrean          |\
+| Weno        | Micronesia, Federated States of | Mortlock         |\
+| Weno        | Micronesia, Federated States of | Pohnpei          |\
+| Weno        | Micronesia, Federated States of | Trukese          |\
+| Weno        | Micronesia, Federated States of | Wolea            |\
+| Weno        | Micronesia, Federated States of | Yap              |\
+| Palikir     | Micronesia, Federated States of | Kosrean          |\
+| Palikir     | Micronesia, Federated States of | Mortlock         |\
+| Palikir     | Micronesia, Federated States of | Pohnpei          |\
+| Palikir     | Micronesia, Federated States of | Trukese          |\
+| Palikir     | Micronesia, Federated States of | Wolea            |\
+| Palikir     | Micronesia, Federated States of | Yap              |\
+| Macao       | Macao                           | Canton Chinese   |\
+| Macao       | Macao                           | English          |\
+| Macao       | Macao                           | Mandarin Chinese |\
+| Macao       | Macao                           | Portuguese       |\
+| Casablanca  | Morocco                         | Arabic           |\
+| Casablanca  | Morocco                         | Berberi          |\
+| Rabat       | Morocco                         | Arabic           |\
+| Rabat       | Morocco                         | Berberi          |\
+| Marrakech   | Morocco                         | Arabic           |\
+| Marrakech   | Morocco                         | Berberi          |\
+| F\'e8s         | Morocco                         | Arabic           |\
+| F\'e8s         | Morocco                         | Berberi          |\
+| Tanger      | Morocco                         | Arabic           |\
+| Tanger      | Morocco                         | Berberi          |\
+| Sal\'e9        | Morocco                         | Arabic           |\
+| Sal\'e9        | Morocco                         | Berberi          |\
+| Mekn\'e8s      | Morocco                         | Arabic           |\
+| Mekn\'e8s      | Morocco                         | Berberi          |\
+| Oujda       | Morocco                         | Arabic           |\
+| Oujda       | Morocco                         | Berberi          |\
+| K\'e9nitra     | Morocco                         | Arabic           |\
+| K\'e9nitra     | Morocco                         | Berberi          |\
+| T\'e9touan     | Morocco                         | Arabic           |\
+| T\'e9touan     | Morocco                         | Berberi          |\
+| Safi        | Morocco                         | Arabic           |\
+| Safi        | Morocco                         | Berberi          |\
+| Agadir      | Morocco                         | Arabic           |\
+| Agadir      | Morocco                         | Berberi          |\
+| Mohammedia  | Morocco                         | Arabic           |\
+| Mohammedia  | Morocco                         | Berberi          |\
+| Khouribga   | Morocco                         | Arabic           |\
+| Khouribga   | Morocco                         | Berberi          |\
+| Beni-Mellal | Morocco                         | Arabic           |\
+| Beni-Mellal | Morocco                         | Berberi          |\
+| T\'e9mara      | Morocco                         | Arabic           |\
+| T\'e9mara      | Morocco                         | Berberi          |\
+| El Jadida   | Morocco                         | Arabic           |\
+| El Jadida   | Morocco                         | Berberi          |\
++-------------+---------------------------------+------------------+\
+50 rows in set (0.0043 sec)\
+ MySQL  localhost  world  SQL > select a.name, b.name, c.language from city a inner join country b on b.code = a.countrycode inner join countrylanguage c on c.countrycode = a.countrycode where c.isOficial = "T" limit 50;\
+ERROR: 1054 (42S22): Unknown column 'c.isOficial' in 'where clause'\
+ MySQL  localhost  world  SQL > select a.name, b.name, c.language from city a inner join country b on b.code = a.countrycode inner join countrylanguage c on c.countrycode = a.countrycode where c.isOfficial = "T" limit 50;\
++---------------------+----------------------+------------+\
+| name                | name                 | language   |\
++---------------------+----------------------+------------+\
+| Kabul               | Afghanistan          | Dari       |\
+| Kabul               | Afghanistan          | Pashto     |\
+| Qandahar            | Afghanistan          | Dari       |\
+| Qandahar            | Afghanistan          | Pashto     |\
+| Herat               | Afghanistan          | Dari       |\
+| Herat               | Afghanistan          | Pashto     |\
+| Mazar-e-Sharif      | Afghanistan          | Dari       |\
+| Mazar-e-Sharif      | Afghanistan          | Pashto     |\
+| Amsterdam           | Netherlands          | Dutch      |\
+| Rotterdam           | Netherlands          | Dutch      |\
+| Haag                | Netherlands          | Dutch      |\
+| Utrecht             | Netherlands          | Dutch      |\
+| Eindhoven           | Netherlands          | Dutch      |\
+| Tilburg             | Netherlands          | Dutch      |\
+| Groningen           | Netherlands          | Dutch      |\
+| Breda               | Netherlands          | Dutch      |\
+| Apeldoorn           | Netherlands          | Dutch      |\
+| Nijmegen            | Netherlands          | Dutch      |\
+| Enschede            | Netherlands          | Dutch      |\
+| Haarlem             | Netherlands          | Dutch      |\
+| Almere              | Netherlands          | Dutch      |\
+| Arnhem              | Netherlands          | Dutch      |\
+| Zaanstad            | Netherlands          | Dutch      |\
+| \'b4s-Hertogenbosch    | Netherlands          | Dutch      |\
+| Amersfoort          | Netherlands          | Dutch      |\
+| Maastricht          | Netherlands          | Dutch      |\
+| Dordrecht           | Netherlands          | Dutch      |\
+| Leiden              | Netherlands          | Dutch      |\
+| Haarlemmermeer      | Netherlands          | Dutch      |\
+| Zoetermeer          | Netherlands          | Dutch      |\
+| Emmen               | Netherlands          | Dutch      |\
+| Zwolle              | Netherlands          | Dutch      |\
+| Ede                 | Netherlands          | Dutch      |\
+| Delft               | Netherlands          | Dutch      |\
+| Heerlen             | Netherlands          | Dutch      |\
+| Alkmaar             | Netherlands          | Dutch      |\
+| Willemstad          | Netherlands Antilles | Dutch      |\
+| Willemstad          | Netherlands Antilles | Papiamento |\
+| Tirana              | Albania              | Albaniana  |\
+| Alger               | Algeria              | Arabic     |\
+| Oran                | Algeria              | Arabic     |\
+| Constantine         | Algeria              | Arabic     |\
+| Annaba              | Algeria              | Arabic     |\
+| Batna               | Algeria              | Arabic     |\
+| S\'e9tif               | Algeria              | Arabic     |\
+| Sidi Bel Abb\'e8s      | Algeria              | Arabic     |\
+| Skikda              | Algeria              | Arabic     |\
+| Biskra              | Algeria              | Arabic     |\
+| Blida (el-Boulaida) | Algeria              | Arabic     |\
+| B\'e9ja\'efa              | Algeria              | Arabic     |\
++---------------------+----------------------+------------+\
+50 rows in set (0.0049 sec)\
+ MySQL  localhost  world  SQL > use tbd_e2;\
+Default schema set to `tbd_e2`.\
+Fetching global names, object names from `tbd_e2` for auto-completion... Press ^C to stop.\
+ MySQL  localhost  tbd_e2  SQL > show tables,\
+                              -> ;\
+ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 1\
+ MySQL  localhost  tbd_e2  SQL > show tables;\
++------------------+\
+| Tables_in_tbd_e2 |\
++------------------+\
+| cliente          |\
+| factura          |\
+| factura_detalle  |\
+| producto         |\
+| tableA           |\
+| tableB           |\
++------------------+\
+6 rows in set (0.0012 sec)\
+ MySQL  localhost  tbd_e2  SQL > select * from factura_detalle;\
+Empty set (0.0054 sec)\
+ MySQL  localhost  tbd_e2  SQL > select * from factura;\
+Empty set (0.0057 sec)\
+ MySQL  localhost  tbd_e2  SQL > select * from cliente;\
+Empty set (0.0117 sec)\
+ MySQL  localhost  tbd_e2  SQL >}
